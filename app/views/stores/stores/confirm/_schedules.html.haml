@@ -1,0 +1,33 @@
+= simple_form_for [@store, @schedule], url: store_schedule_path(@store, @schedule) do |f|
+  = f.error_notification
+
+  .row
+    - Schedule::DAYS_OF_THE_WEEK.each do |day|
+      .large-3.columns.left
+        %ul.pricing-table
+          %li.title= day.capitalize
+          %li.description
+            .row
+              .small-12
+                .row
+                  .small-2.columns
+                    = check_box_tag "schedule[#{day}][active]", true, (@schedule.new_record? ? true : @schedule[day]["active"]), class: "right inline"
+                  .small-10.columns
+                    = label_tag :active, nil, id: "right-label"
+              %p
+              .small-12
+                .row
+                  .small-2.columns
+                    = check_box_tag "schedule[#{day}][all_day]", true, (@schedule.new_record? ? false : @schedule[day]["all_day"]), class: "right inline"
+                  .small-10.columns
+                    = label_tag :all_day, nil, id: "right-label"
+          %li.bullet-item
+            = label_tag :start_time
+            = text_field_tag "schedule[#{day}][start_time]", (@schedule.new_record? ? nil : seconds_to_time(@schedule[day]["start_time"], :time)), class: "timepicker"
+            = label_tag :end_time
+            = text_field_tag "schedule[#{day}][end_time]", (@schedule.new_record? ? nil : seconds_to_time(@schedule[day]["end_time"], :time)), class: "timepicker"
+
+  .row.button-div
+    .small-8.small-centered.columns
+      = f.submit "Crear horario", class: "large button radius"
+      = link_to "Cancelar", [@store, :schedule], class: "large button secondary radius"

@@ -1,0 +1,29 @@
+// Place all the styles related to the promotions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.ms-selectable {
+  width:  350px;
+  .custom-header {
+    padding: 0px;
+    margin: 0px;
+  }
+  input[type="text"], input.seach-input {
+    padding: 0px;
+    margin: 0px;
+    padding: 10px;
+  }
+  ul.ms-list {
+    width: 350px;
+  }
+}
+
+.ms-selection {
+  width:  350px;
+  .custom-header {
+    padding: 10px;
+  }
+  ul.ms-list {
+    width: 350px;
+  }
+}

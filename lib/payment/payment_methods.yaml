@@ -1,0 +1,19 @@
+khipu:
+  name: "Khipu"
+  website: "khipu.com"
+  fixed_value: 200
+  currency: "CLP"
+  button_image: https://s3.amazonaws.com/static.khipu.com/buttons/150x50.png
+  active: true
+  countries:
+    - Chile
+paypal:
+  name: "PayPal"
+  website: "paypal.com"
+  variable_value: 5.4
+  fixed_value: 0.3
+  currency: "USD"
+  button_image: https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_74x46.jpg
+  active: false
+  countries:
+    - Chile

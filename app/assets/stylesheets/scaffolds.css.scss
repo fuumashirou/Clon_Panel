@@ -1,0 +1,111 @@
+body {
+  background: image-url("bg.jpg");
+  color: #333;
+  padding: 50px 0 0 0;
+}
+
+.big-icon {
+  font-size: 24px;
+}
+
+.user-bar {
+  width: 100%;
+  height: 30px;
+  top: 0;
+  padding: 5px 0;
+  position: absolute;
+  font-size: 13px;
+  border-bottom: 1px solid #C8C8C8;
+}
+
+.current-user {
+  margin-top: 3px;
+}
+
+.admin {
+  padding: 0;
+}
+
+ul.admin {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.admin li {
+  display: inline;
+  float: left;
+}
+
+.admin li a {
+  text-decoration: none;
+  float: left;
+  padding: 0 10px;
+  color: black;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.inner {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  width: 246px;
+  height: 246px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.button-div {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.top-bar .name {
+  height: 61px;
+  width: 61px;
+  background-image: image-url("logo_small.png");
+  background-repeat: none;
+  background-position: center;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.pink {
+  color: #ed1260 !important;
+}
+
+.edit, .delete, .view {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  padding: 0;
+  background-repeat: none;
+  background-position: center;
+}
+
+.edit {
+  background-image: image-url("edit.png");
+}
+
+.delete {
+  background-image: image-url("delete.png");
+}
+
+.view {
+  width: 20px !important;
+  background-image: image-url("view.png");
+}
+
+.payment-button {
+  height: 50px;
+}

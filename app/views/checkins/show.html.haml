@@ -1,0 +1,48 @@
+%h1= "Checkin mesa #{@checkin.table_number}"
+%p
+  %b Arrive:
+  = l @checkin.arrive_at, format: :long
+%p
+  %b Leave:
+  = @checkin.leave_at.nil? ? link_to("Liberar", leave_store_checkin_path(@store, @checkin.id), method: :delete) : @checkin.leave_at
+
+%p
+  %b Users:
+  %table
+    %thead
+      %tr
+        %th Username
+        %th Verified
+        %th Checked at
+        / %th
+
+    %tbody
+      - @checkin.accounts.each do |account|
+        %tr
+          %td= link_to_if admin_signed_in?, account.username, user_path(account.username)
+          %td= account.verified
+          %td= l account.checked_at, format: :short
+          / %th= account.verified ? link_to("Bloquear", block_store_checkin_path(@store, @checkin.id, user: account.username), method: :patch) : link_to("Verificar", validate_store_checkin_path(@store, @checkin, user: account.username), method: :patch)
+
+%p
+  %b Orders:
+  %table
+    %thead
+      %tr
+        %th # Orden
+        %th Status
+        %th Ordered by
+        %th Items
+    %tbody
+      - @checkin.orders.each do |order|
+        %tr
+          %td= order.id
+          %td= order.received
+          %td= order.ordered_by
+          %td
+            - order.items.each do |item|
+              = item.name
+              = item.quantity
+              %br
+
+= link_to 'Back', store_table_path(@store, @checkin.table_id)

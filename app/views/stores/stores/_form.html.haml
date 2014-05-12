@@ -1,0 +1,89 @@
+= simple_form_for @store, html: { class: "custom"} do |f|
+  = f.error_notification
+
+  - if @store.new_record?
+    %h3 Contacto
+    = render "stores/contacts/fields", f: f
+
+  %h3 Local
+  .row
+    .small-6.columns
+      .field
+        = f.label :name
+        = f.text_field :name
+    .small-6.columns
+      .field
+        = f.label :category
+        = f.select :category, Store::CATEGORIES
+  .row
+    .small-12.columns
+      .field
+        = f.label :description
+        = f.text_area :description
+  .row
+    .small-12.columns
+      .field
+        = f.label :address
+        formato sugerido: calle numero, ciudad, pais
+        = f.text_field :address
+  .row
+    .small-12.columns
+      .field
+        = f.label :web
+        = f.text_field :web
+  .row
+    .small-6.columns
+      .field
+        = f.label :facebook
+        = f.text_field :facebook
+    .small-6.columns
+      .field
+        = f.label :twitter
+        = f.text_field :twitter
+  .row
+    .small-6.columns
+      .field
+        = f.label :city
+        = f.select :city, Store::CITIES
+    .small-6.columns
+      .field
+        = f.label :phone
+        = f.text_field :phone
+  .row
+    .small-6.columns
+      .field
+        = f.label :currency
+        = f.select :currency, Currency.all.map { |c| [ c.currency ] }, default: "CLP"
+    .small-6.columns
+      .field
+        = f.input :time_zone
+  .row
+    .small-6.columns
+      .small-6.columns
+        = f.label :tipping
+        = f.radio_button :tipping, true, checked: @store.tipping
+        = f.label :tipping, "Si", value: true, style: "display:inline"
+        = f.radio_button :tipping, false, checked: !@store.tipping
+        = f.label :tipping, "No", value: false, style: "display:inline"
+      .small-6.columns
+        = f.label :hidden
+        = f.radio_button :hidden, true, checked: @store.hidden
+        = f.label :hidden, "Si", value: true, style: "display:inline"
+        = f.radio_button :hidden, false, checked: !@store.hidden
+        = f.label :hidden, "No", value: false, style: "display:inline"
+    .small-6.columns
+      .field
+        = f.label :tip_amount
+        = f.text_field :tip_amount
+
+  - if admin_signed_in?
+    .row
+      .small-6.columns
+        .field
+          = f.label :payment
+          = f.text_field :payment
+
+  .row.button-div
+    .small-8.small-centered.columns
+      = f.submit "Guardar", class: "button radius"
+      = link_to "Cancelar", stores_path, class: "button secondary radius"

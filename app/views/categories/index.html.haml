@@ -1,0 +1,20 @@
+%h1 Categorias
+
+= link_to 'Nueva categoria', [:new, @store, :category], class: "button small"
+
+%table
+  %thead
+    %tr
+      %th Type
+      %th Name
+      %th Items
+      %th
+      %th
+  %tbody
+    - @categories.each do |category|
+      %tr
+        %td= category.type
+        %td= category.name
+        %td= category.items
+        %td= link_for 'edit', @store, category
+        %td= link_for 'delete', @store, category

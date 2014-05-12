@@ -1,0 +1,20 @@
+%h1 Admins
+
+%table
+  %thead
+    %tr
+      %th mail
+      %th Signs in
+      %th Last seen
+      %th Last IP
+      %th Created at
+      %th Updated at
+  %tbody
+    - @admins.each do |admin|
+      %tr
+        %td= admin
+        %td= admin.sign_in_count
+        %td=l admin.last_sign_in_at, format: :short if admin.last_sign_in_at.present?
+        %td= admin.last_sign_in_ip
+        %td=l admin.created_at, format: :short if admin.created_at.present?
+        %td=l admin.updated_at, format: :short if admin.updated_at.present?

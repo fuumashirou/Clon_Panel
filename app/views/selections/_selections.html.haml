@@ -1,0 +1,27 @@
+%table
+  %thead
+    %tr
+      %th Seleccion
+      %th
+      %th
+      %th
+  %tbody
+  - selections.each do |selection|
+    %tr
+      %td
+        = selection.title
+      %td
+        %table
+          %tbody
+          - selection.selection_items.each do |item|
+            - stock = $redis.hget("Store:#{@store._id}:SelectionItem", item._id) == "true" ? true : false
+            %tr
+              %td= item.name
+              %td
+                = stock == true ? "Con stock" : "Sin stock"
+                |
+                = link_to "cambiar", stock_store_selection_selection_item_path(@store, selection, item, stock: !stock), method: :patch, remote: true, data: { confirm: "Estas seguro?" }
+
+        - if is_primary?
+          %td= link_for 'edit', @store, selection
+          %td= link_for 'delete', @store, selection

@@ -1,0 +1,37 @@
+= simple_form_for [@store, @selection], remote: params[:controller] == "selections" ? false : true do |f|
+  = f.error_notification
+
+  .field
+    .title
+      - if params[:controller] == "selections"
+        = f.label :title
+        = f.text_field :title, class: "selection-title"
+      - else
+        = link_to "Usar existente", "#", class: "use_template button"
+        = f.label :title
+        = f.text_field :title, class: "selection-title"
+        = f.select :title, options_from_collection_for_select(@store.selections.reject { |s| s.new_record? }, 'title', 'title'), { prompt: "--Selecciona un template--" }, { class: "selection-template", disabled: true }
+  .form
+    .field
+      = f.label :items_limit
+      = f.text_field :items_limit, value: 1
+    .field
+      = f.label :aditional_price
+      = f.text_field :aditional_price, value: 0
+    .field
+      = f.label :required
+      = f.radio_button :required, true, checked: true
+      = f.label :required, "Requerido", value: true, style: "display:inline"
+      = f.radio_button :required, false
+      = f.label :required, "Opcional", value: false, style: "display:inline"
+
+      %h2 Items
+      = link_to_add_fields "Agregar item", f, :selection_items
+      - if @selection.selection_items
+        = f.fields_for :selection_items do |item|
+          = render "selection_items/selection_item_fields", f: item
+
+  .row.button-div
+    .small-8.small-centered.columns
+      = f.submit "Agregar", class: "button radius"
+      = link_to "Cancelar", [@store, :selections], class: "button secondary radius" if params[:controller] == "selections"

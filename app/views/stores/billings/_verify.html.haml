@@ -1,0 +1,4 @@
+= form_tag change_store_checkin_path(@store, checkin), class: "custom" do
+  %td= select_tag :table_id, options_from_collection_for_select(@store.tables, "_id", "number")
+  %td= check_box_tag :merge, true, false
+  %td= submit_tag "Save", class: "button"

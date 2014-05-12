@@ -1,0 +1,30 @@
+%h1= @item.name
+
+%p
+  %b Description:
+  = @item.description
+%p
+  %b Price:
+  = number_to_currency @item.price
+%p
+  %b Category:
+  = @item.category
+
+- unless @item.selections.nil?
+
+  %h3 Selections
+
+  %table
+    %thead
+      %tr
+        %th Title
+        %th Items
+    %tbody
+      - @item.selections.each do |selection|
+        %tr
+          %td= selection.title
+          %td= selection.selection_items.map(&:name).join(", ")
+
+= link_to 'Editar', [:edit, @store, @item]
+\|
+= link_to 'Volver', [@store, :items]

@@ -1,0 +1,25 @@
+.print {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 1.3em;
+}
+.print .table, .print .date,.print .total {
+  width: 100%;
+  display: block;
+  padding: 10px;
+}
+.print h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+.print .table-name {
+  width: 80%;
+}
+.print .table-quantity {
+  width: 20%;
+}
+.print .items, .print .table {
+  width: 100%;
+}

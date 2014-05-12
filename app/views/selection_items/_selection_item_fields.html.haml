@@ -1,0 +1,13 @@
+.row.item
+  .large-12.columns
+    .row.collapse
+      .small-4.columns
+        .field
+          = f.text_field :name, placeholder: "nombre"
+      .small-4.columns
+        .field
+          = f.text_field :price, placeholder: "precio"
+      .small-4.columns
+        .field
+          = f.hidden_field :_destroy
+          = link_to "Remover", "#", class: "remove_item tiny button .prefix"

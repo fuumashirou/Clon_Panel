@@ -1,0 +1,30 @@
+%h1 Locales
+
+= link_to "Registrar nuevo local", [:new, :store], class: "button small"
+- if @stores.empty?
+  %p No existen locales registrados
+- else
+  %table
+    %thead
+      %tr
+        %th
+        %th Name
+        %th City
+        - if admin_signed_in?
+          %th Payment
+          %th Verified
+          %th Active
+        %th
+        %th
+    %tbody
+      - @stores.each do |store|
+        %tr
+          %td= link_to 'Ver', store
+          %td= store.name
+          %td= store.city
+          - if admin_signed_in?
+            %td= store.payment
+            %td= store.verified ? store.verified : link_to("Verificar", [:verify, store], method: :patch)
+            %td= store.active
+          %td= link_to 'Editar', edit_store_path(store)
+          %td= link_to 'Eliminar', store, :method => :delete, :data => { :confirm => 'Are you sure?' }

@@ -1,0 +1,71 @@
+= simple_form_for [@store, @item] do |f|
+  = f.error_notification
+  .row
+    .small-6.columns
+      .field
+        = f.label :name
+        = f.text_field :name
+    .small-6.columns
+      .field
+        = f.label :price
+        = f.number_field :price
+  .row
+    .small-12.columns
+      .field
+        = f.label :description
+        = f.text_area :description
+  .row
+    .small-6.columns
+      .field
+        = f.label :type
+        - unless @item.new_record?
+          = f.select :type, options_for_select(Item::TYPES, @store.categories.find_by(name: @item.category).type)
+        - else
+          = f.select :type, options_for_select(Item::TYPES)
+    .small-6.columns
+      .field
+        = f.label :category
+        = f.select :category, grouped_options_for_select(@store.categories.group_by { |h| h[:type] }.each { |_, v| v.map! { |h| h[:name] } }, @item.category)
+  .row.happy_hour
+    .small-6.columns
+      .field
+        = f.label :happy_hour
+        = f.label :happy_hour, "Si", value: 0, style: "display:inline"
+        = f.radio_button :happy_hour, true, checked: (@item.new_record? ? true : @item.happy_hour)
+        = f.label :happy_hour, "No", value: 1, style: "display:inline"
+        = f.radio_button :happy_hour, false, checked: (@item.new_record? ? false : @item.happy_hour)
+    .small-6.columns.hh_price
+      .field
+        = f.label :hh_price
+        = f.text_field :hh_price
+
+  .row
+    %h2 Selecciones
+
+    %table
+      %thead
+        %tr
+          %th Nombre
+          %th
+          %th
+      %tbody.selections
+        - @item.selections.each do |selection|
+          %tr
+            %td= selection.title
+            %td= link_for 'editar', @store, selection
+            %td
+              = link_to "#" do
+                = content_tag(:div, nil, class: "delete remove_selection", id: selection.selection_id)
+
+    = link_to "Agregar seleccion", "#", "data-reveal-id" => "selection-modal", class: "button"
+    = f.hidden_field :alternatives, value: @item.selections.map(&:selection_id).join(",")
+    = f.hidden_field :remove_alternatives
+
+  .row.button-div
+    .small-8.small-centered.columns
+      = f.submit "Guardar", class: "button radius"
+      = link_to "Cancelar", [@store, :items], class: "button secondary radius"
+
+#selection-modal.reveal-modal{ "data-reveal" => true }
+  = render "selections/form", selection: @store.selections.build
+  = link_to "&#215;".html_safe, "#", class: "close-reveal-modal"

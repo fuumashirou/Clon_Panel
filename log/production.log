@@ -1,0 +1,2399 @@
+W, [2013-11-01T12:58:29.742566 #27512]  WARN -- : Overwriting existing field _id in class CheckinItem.
+W, [2013-11-01T12:58:30.330534 #27512]  WARN -- : Creating scope :near. Overwriting existing method Store.near.
+W, [2013-11-01T12:59:21.573038 #27568]  WARN -- : Overwriting existing field _id in class CheckinItem.
+W, [2013-11-01T12:59:22.042675 #27568]  WARN -- : Creating scope :near. Overwriting existing method Store.near.
+I, [2013-11-01T13:01:07.447809 #27568]  INFO -- : Started GET "/" for 127.0.0.1 at 2013-11-01 13:01:07 -0300
+I, [2013-11-01T13:01:07.567697 #27568]  INFO -- : Processing by PagesController#index as HTML
+I, [2013-11-01T13:01:07.599689 #27568]  INFO -- : Redirected to http://localhost:3000/accounts/sign_in
+I, [2013-11-01T13:01:07.599991 #27568]  INFO -- : Completed 302 Found in 32ms
+I, [2013-11-01T13:01:07.605999 #27568]  INFO -- : Started GET "/accounts/sign_in" for 127.0.0.1 at 2013-11-01 13:01:07 -0300
+I, [2013-11-01T13:01:07.611993 #27568]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2013-11-01T13:01:07.845672 #27568]  INFO -- :   Rendered accounts/shared/_links.haml (5.2ms)
+I, [2013-11-01T13:01:07.846717 #27568]  INFO -- :   Rendered accounts/sessions/new.html.haml within layouts/application (121.1ms)
+I, [2013-11-01T13:01:07.880308 #27568]  INFO -- :   Rendered application/_top.html.haml (17.2ms)
+I, [2013-11-01T13:01:07.882688 #27568]  INFO -- : Completed 200 OK in 270ms (Views: 168.2ms)
+I, [2013-11-01T13:01:08.009222 #27568]  INFO -- : Started GET "/javascripts/vendor/custom.modernizr.js" for 127.0.0.1 at 2013-11-01 13:01:08 -0300
+I, [2013-11-01T13:01:08.009451 #27568]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2013-11-01 13:01:08 -0300
+F, [2013-11-01T13:01:08.014691 #27568] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/vendor/custom.modernizr.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+F, [2013-11-01T13:01:08.016452 #27568] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:08.017011 #27568]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2013-11-01 13:01:08 -0300
+I, [2013-11-01T13:01:08.016498 #27568]  INFO -- : Started GET "/images/logo.png" for 127.0.0.1 at 2013-11-01 13:01:08 -0300
+F, [2013-11-01T13:01:08.029463 #27568] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+F, [2013-11-01T13:01:08.029828 #27568] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:08.084851 #27568]  INFO -- : Started GET "/images/logo.png" for 127.0.0.1 at 2013-11-01 13:01:08 -0300
+F, [2013-11-01T13:01:08.086941 #27568] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:08.091475 #27568]  INFO -- : Started GET "/static/beep.mp3" for 127.0.0.1 at 2013-11-01 13:01:08 -0300
+F, [2013-11-01T13:01:08.094799 #27568] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.mp3"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:08.114007 #27568]  INFO -- : Started GET "/static/beep.ogg" for 127.0.0.1 at 2013-11-01 13:01:08 -0300
+F, [2013-11-01T13:01:08.116687 #27568] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.ogg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:09.362658 #27568]  INFO -- : Started GET "/accounts/sign_in" for 127.0.0.1 at 2013-11-01 13:01:09 -0300
+I, [2013-11-01T13:01:09.370298 #27568]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2013-11-01T13:01:09.384550 #27568]  INFO -- :   Rendered accounts/shared/_links.haml (1.3ms)
+I, [2013-11-01T13:01:09.385675 #27568]  INFO -- :   Rendered accounts/sessions/new.html.haml within layouts/application (6.8ms)
+I, [2013-11-01T13:01:09.388888 #27568]  INFO -- :   Rendered application/_top.html.haml (1.9ms)
+I, [2013-11-01T13:01:09.390121 #27568]  INFO -- : Completed 200 OK in 20ms (Views: 11.8ms)
+I, [2013-11-01T13:01:09.497009 #27568]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2013-11-01 13:01:09 -0300
+F, [2013-11-01T13:01:09.500983 #27568] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:09.503086 #27568]  INFO -- : Started GET "/javascripts/vendor/custom.modernizr.js" for 127.0.0.1 at 2013-11-01 13:01:09 -0300
+F, [2013-11-01T13:01:09.505805 #27568] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/vendor/custom.modernizr.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:09.507427 #27568]  INFO -- : Started GET "/images/logo.png" for 127.0.0.1 at 2013-11-01 13:01:09 -0300
+F, [2013-11-01T13:01:09.511987 #27568] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:09.572661 #27568]  INFO -- : Started GET "/static/beep.mp3" for 127.0.0.1 at 2013-11-01 13:01:09 -0300
+F, [2013-11-01T13:01:09.574875 #27568] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.mp3"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:09.585191 #27568]  INFO -- : Started GET "/static/beep.ogg" for 127.0.0.1 at 2013-11-01 13:01:09 -0300
+F, [2013-11-01T13:01:09.587037 #27568] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.ogg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:33.450533 #27568]  INFO -- : Started POST "/accounts/sign_in" for 127.0.0.1 at 2013-11-01 13:01:33 -0300
+I, [2013-11-01T13:01:33.454225 #27568]  INFO -- : Processing by Devise::SessionsController#create as HTML
+I, [2013-11-01T13:01:33.454400 #27568]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"OOz/QWiX5aL8K9p4JC4BoqU94b885nghPLv4N4b9mMk=", "account"=>{"username"=>"jtomasrl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+I, [2013-11-01T13:01:34.788363 #27568]  INFO -- : Completed 401 Unauthorized in 1334ms
+I, [2013-11-01T13:01:34.793052 #27568]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2013-11-01T13:01:34.793210 #27568]  INFO -- :   Parameters: {"utf8"=>"✓", "authenticity_token"=>"OOz/QWiX5aL8K9p4JC4BoqU94b885nghPLv4N4b9mMk=", "account"=>{"username"=>"jtomasrl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Entrar"}
+I, [2013-11-01T13:01:36.116802 #27568]  INFO -- :   Rendered accounts/shared/_links.haml (1.0ms)
+I, [2013-11-01T13:01:36.118092 #27568]  INFO -- :   Rendered accounts/sessions/new.html.haml within layouts/application (7.8ms)
+I, [2013-11-01T13:01:36.121003 #27568]  INFO -- :   Rendered application/_top.html.haml (1.7ms)
+I, [2013-11-01T13:01:36.122179 #27568]  INFO -- : Completed 200 OK in 1329ms (Views: 13.0ms)
+I, [2013-11-01T13:01:36.290260 #27568]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2013-11-01 13:01:36 -0300
+F, [2013-11-01T13:01:36.295074 #27568] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:36.295550 #27568]  INFO -- : Started GET "/javascripts/vendor/custom.modernizr.js" for 127.0.0.1 at 2013-11-01 13:01:36 -0300
+I, [2013-11-01T13:01:36.296266 #27568]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2013-11-01 13:01:36 -0300
+I, [2013-11-01T13:01:36.296401 #27568]  INFO -- : Started GET "/images/logo.png" for 127.0.0.1 at 2013-11-01 13:01:36 -0300
+F, [2013-11-01T13:01:36.302077 #27568] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/vendor/custom.modernizr.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+F, [2013-11-01T13:01:36.303972 #27568] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+F, [2013-11-01T13:01:36.305099 #27568] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:36.356140 #27568]  INFO -- : Started GET "/static/beep.mp3" for 127.0.0.1 at 2013-11-01 13:01:36 -0300
+F, [2013-11-01T13:01:36.358160 #27568] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.mp3"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:36.368591 #27568]  INFO -- : Started GET "/static/beep.ogg" for 127.0.0.1 at 2013-11-01 13:01:36 -0300
+F, [2013-11-01T13:01:36.370457 #27568] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.ogg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+W, [2013-11-01T13:01:49.345773 #27709]  WARN -- : Overwriting existing field _id in class CheckinItem.
+W, [2013-11-01T13:01:49.833149 #27709]  WARN -- : Creating scope :near. Overwriting existing method Store.near.
+I, [2013-11-01T13:01:55.092735 #27709]  INFO -- : Started GET "/admins/sign_in" for 127.0.0.1 at 2013-11-01 13:01:55 -0300
+I, [2013-11-01T13:01:55.212823 #27709]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2013-11-01T13:01:55.268308 #27709]  INFO -- : Redirected to http://localhost:3000/stores
+I, [2013-11-01T13:01:55.268669 #27709]  INFO -- : Filter chain halted as :require_no_authentication rendered or redirected
+I, [2013-11-01T13:01:55.281045 #27709]  INFO -- : Completed 302 Found in 68ms
+I, [2013-11-01T13:01:55.286676 #27709]  INFO -- : Started GET "/stores" for 127.0.0.1 at 2013-11-01 13:01:55 -0300
+I, [2013-11-01T13:01:55.291873 #27709]  INFO -- : Processing by StoresController#index as HTML
+I, [2013-11-01T13:01:55.311815 #27709]  INFO -- :   Rendered stores/index.html.haml within layouts/application (12.0ms)
+I, [2013-11-01T13:01:55.347648 #27709]  INFO -- :   Rendered application/_top.html.haml (17.5ms)
+I, [2013-11-01T13:01:55.349733 #27709]  INFO -- : Completed 200 OK in 58ms (Views: 53.4ms)
+I, [2013-11-01T13:01:55.488779 #27709]  INFO -- : Started GET "/assets/application-acf9d4ca0977a8b3aaefa48e82fe948c.css" for 127.0.0.1 at 2013-11-01 13:01:55 -0300
+F, [2013-11-01T13:01:55.494332 #27709] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-acf9d4ca0977a8b3aaefa48e82fe948c.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:55.496238 #27709]  INFO -- : Started GET "/assets/vendor/custom.modernizr-3767f42bc62dd42a795d8b6054728d63.js" for 127.0.0.1 at 2013-11-01 13:01:55 -0300
+I, [2013-11-01T13:01:55.499732 #27709]  INFO -- : Started GET "/assets/application-b76ffd0eb0da07347ababa8b5b0ff047.js" for 127.0.0.1 at 2013-11-01 13:01:55 -0300
+F, [2013-11-01T13:01:55.501317 #27709] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/custom.modernizr-3767f42bc62dd42a795d8b6054728d63.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+F, [2013-11-01T13:01:55.508294 #27709] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-b76ffd0eb0da07347ababa8b5b0ff047.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:55.552268 #27709]  INFO -- : Started GET "/static/beep.mp3" for 127.0.0.1 at 2013-11-01 13:01:55 -0300
+F, [2013-11-01T13:01:55.554501 #27709] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.mp3"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:55.561516 #27709]  INFO -- : Started GET "/static/beep.ogg" for 127.0.0.1 at 2013-11-01 13:01:55 -0300
+F, [2013-11-01T13:01:55.563766 #27709] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.ogg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:59.006203 #27709]  INFO -- : Started GET "/stores/5252fdf424f1e7fbf7000004" for 127.0.0.1 at 2013-11-01 13:01:59 -0300
+I, [2013-11-01T13:01:59.012911 #27709]  INFO -- : Processing by StoresController#show as HTML
+I, [2013-11-01T13:01:59.013089 #27709]  INFO -- :   Parameters: {"id"=>"5252fdf424f1e7fbf7000004"}
+I, [2013-11-01T13:01:59.035163 #27709]  INFO -- :   Rendered stores/show.html.haml within layouts/application (10.9ms)
+I, [2013-11-01T13:01:59.046972 #27709]  INFO -- :   Rendered application/_top.html.haml (10.2ms)
+I, [2013-11-01T13:01:59.145719 #27709]  INFO -- : Completed 200 OK in 132ms (Views: 123.3ms)
+I, [2013-11-01T13:01:59.271559 #27709]  INFO -- : Started GET "/assets/application-acf9d4ca0977a8b3aaefa48e82fe948c.css" for 127.0.0.1 at 2013-11-01 13:01:59 -0300
+F, [2013-11-01T13:01:59.275414 #27709] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-acf9d4ca0977a8b3aaefa48e82fe948c.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:59.275778 #27709]  INFO -- : Started GET "/assets/application-b76ffd0eb0da07347ababa8b5b0ff047.js" for 127.0.0.1 at 2013-11-01 13:01:59 -0300
+I, [2013-11-01T13:01:59.276796 #27709]  INFO -- : Started GET "/assets/vendor/custom.modernizr-3767f42bc62dd42a795d8b6054728d63.js" for 127.0.0.1 at 2013-11-01 13:01:59 -0300
+F, [2013-11-01T13:01:59.280782 #27709] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-b76ffd0eb0da07347ababa8b5b0ff047.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+F, [2013-11-01T13:01:59.282987 #27709] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/custom.modernizr-3767f42bc62dd42a795d8b6054728d63.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:59.360566 #27709]  INFO -- : Started GET "/static/beep.mp3" for 127.0.0.1 at 2013-11-01 13:01:59 -0300
+F, [2013-11-01T13:01:59.362444 #27709] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.mp3"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:01:59.366910 #27709]  INFO -- : Started GET "/static/beep.ogg" for 127.0.0.1 at 2013-11-01 13:01:59 -0300
+F, [2013-11-01T13:01:59.368808 #27709] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.ogg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:02:12.117179 #27709]  INFO -- : Started GET "/stores/5252fdf424f1e7fbf7000004/orders" for 127.0.0.1 at 2013-11-01 13:02:12 -0300
+I, [2013-11-01T13:02:12.124768 #27709]  INFO -- : Processing by OrdersController#index as HTML
+I, [2013-11-01T13:02:12.124951 #27709]  INFO -- :   Parameters: {"store_id"=>"5252fdf424f1e7fbf7000004"}
+I, [2013-11-01T13:02:12.146853 #27709]  INFO -- :   Rendered orders/index.html.haml within layouts/application (7.5ms)
+I, [2013-11-01T13:02:12.156601 #27709]  INFO -- :   Rendered application/_top.html.haml (7.1ms)
+I, [2013-11-01T13:02:12.157966 #27709]  INFO -- : Completed 200 OK in 33ms (Views: 22.6ms)
+I, [2013-11-01T13:02:12.259471 #27709]  INFO -- : Started GET "/assets/application-acf9d4ca0977a8b3aaefa48e82fe948c.css" for 127.0.0.1 at 2013-11-01 13:02:12 -0300
+F, [2013-11-01T13:02:12.264329 #27709] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-acf9d4ca0977a8b3aaefa48e82fe948c.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:02:12.265173 #27709]  INFO -- : Started GET "/assets/vendor/custom.modernizr-3767f42bc62dd42a795d8b6054728d63.js" for 127.0.0.1 at 2013-11-01 13:02:12 -0300
+F, [2013-11-01T13:02:12.268159 #27709] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/vendor/custom.modernizr-3767f42bc62dd42a795d8b6054728d63.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:02:12.268749 #27709]  INFO -- : Started GET "/assets/application-b76ffd0eb0da07347ababa8b5b0ff047.js" for 127.0.0.1 at 2013-11-01 13:02:12 -0300
+F, [2013-11-01T13:02:12.272280 #27709] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/application-b76ffd0eb0da07347ababa8b5b0ff047.js"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:02:12.321998 #27709]  INFO -- : Started GET "/static/beep.mp3" for 127.0.0.1 at 2013-11-01 13:02:12 -0300
+F, [2013-11-01T13:02:12.325183 #27709] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.mp3"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:02:12.329908 #27709]  INFO -- : Started GET "/static/beep.ogg" for 127.0.0.1 at 2013-11-01 13:02:12 -0300
+F, [2013-11-01T13:02:12.331754 #27709] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.ogg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+W, [2013-11-01T13:02:44.182904 #27740]  WARN -- : Overwriting existing field _id in class CheckinItem.
+W, [2013-11-01T13:02:44.673792 #27740]  WARN -- : Creating scope :near. Overwriting existing method Store.near.
+W, [2013-11-01T13:03:08.771993 #27786]  WARN -- : Overwriting existing field _id in class CheckinItem.
+W, [2013-11-01T13:03:09.234728 #27786]  WARN -- : Creating scope :near. Overwriting existing method Store.near.
+I, [2013-11-01T13:03:10.758145 #27786]  INFO -- : Started GET "/stores/5252fdf424f1e7fbf7000004/orders" for 127.0.0.1 at 2013-11-01 13:03:10 -0300
+I, [2013-11-01T13:03:10.881119 #27786]  INFO -- : Processing by OrdersController#index as HTML
+I, [2013-11-01T13:03:10.881256 #27786]  INFO -- :   Parameters: {"store_id"=>"5252fdf424f1e7fbf7000004"}
+I, [2013-11-01T13:03:10.932818 #27786]  INFO -- :   Rendered orders/index.html.haml within layouts/application (10.5ms)
+I, [2013-11-01T13:03:10.970849 #27786]  INFO -- :   Rendered application/_top.html.haml (22.3ms)
+I, [2013-11-01T13:03:10.972307 #27786]  INFO -- : Completed 200 OK in 91ms (Views: 54.0ms)
+I, [2013-11-01T13:03:11.203590 #27786]  INFO -- : Started GET "/assets/bg.jpg" for 127.0.0.1 at 2013-11-01 13:03:11 -0300
+F, [2013-11-01T13:03:11.205730 #27786] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/bg.jpg"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:03:11.231880 #27786]  INFO -- : Started GET "/assets/logo_small.png" for 127.0.0.1 at 2013-11-01 13:03:11 -0300
+I, [2013-11-01T13:03:11.237976 #27786]  INFO -- : Started GET "/assets/table_header.png" for 127.0.0.1 at 2013-11-01 13:03:11 -0300
+F, [2013-11-01T13:03:11.241719 #27786] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/logo_small.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+F, [2013-11-01T13:03:11.243564 #27786] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/assets/table_header.png"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:03:18.891578 #27786]  INFO -- : Started GET "/stores/5252fdf424f1e7fbf7000004/orders/5265264e5620a9b799000001/print_order" for 127.0.0.1 at 2013-11-01 13:03:18 -0300
+I, [2013-11-01T13:03:18.897886 #27786]  INFO -- : Processing by OrdersController#print_order as JS
+I, [2013-11-01T13:03:18.898103 #27786]  INFO -- :   Parameters: {"store_id"=>"5252fdf424f1e7fbf7000004", "id"=>"5265264e5620a9b799000001"}
+I, [2013-11-01T13:03:19.050534 #27786]  INFO -- :   Rendered orders/_print.html.haml (134.5ms)
+I, [2013-11-01T13:03:19.051156 #27786]  INFO -- :   Rendered orders/print_order.js.erb (137.5ms)
+I, [2013-11-01T13:03:19.051527 #27786]  INFO -- : Completed 200 OK in 153ms (Views: 143.1ms)
+I, [2013-11-01T13:03:19.069182 #27786]  INFO -- : Started GET "/stylesheets/print.css" for 127.0.0.1 at 2013-11-01 13:03:19 -0300
+F, [2013-11-01T13:03:19.072535 #27786] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/print.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:04:07.346090 #27786]  INFO -- : Started GET "/stores/5252fdf424f1e7fbf7000004/orders" for 127.0.0.1 at 2013-11-01 13:04:07 -0300
+I, [2013-11-01T13:04:07.348489 #27786]  INFO -- : Processing by OrdersController#index as HTML
+I, [2013-11-01T13:04:07.348777 #27786]  INFO -- :   Parameters: {"store_id"=>"5252fdf424f1e7fbf7000004"}
+I, [2013-11-01T13:04:07.363970 #27786]  INFO -- :   Rendered orders/index.html.haml within layouts/application (1.0ms)
+I, [2013-11-01T13:04:07.374141 #27786]  INFO -- :   Rendered application/_top.html.haml (8.6ms)
+I, [2013-11-01T13:04:07.376121 #27786]  INFO -- : Completed 200 OK in 27ms (Views: 14.1ms)
+I, [2013-11-01T13:04:09.372265 #27786]  INFO -- : Started GET "/stores/5252fdf424f1e7fbf7000004/orders/5265264e5620a9b799000001/print_order" for 127.0.0.1 at 2013-11-01 13:04:09 -0300
+I, [2013-11-01T13:04:09.374406 #27786]  INFO -- : Processing by OrdersController#print_order as JS
+I, [2013-11-01T13:04:09.374628 #27786]  INFO -- :   Parameters: {"store_id"=>"5252fdf424f1e7fbf7000004", "id"=>"5265264e5620a9b799000001"}
+I, [2013-11-01T13:04:09.392887 #27786]  INFO -- :   Rendered orders/_print.html.haml (4.7ms)
+I, [2013-11-01T13:04:09.393498 #27786]  INFO -- :   Rendered orders/print_order.js.erb (5.7ms)
+I, [2013-11-01T13:04:09.393986 #27786]  INFO -- : Completed 200 OK in 19ms (Views: 6.7ms)
+I, [2013-11-01T13:04:09.413407 #27786]  INFO -- : Started GET "/stylesheets/print.css" for 127.0.0.1 at 2013-11-01 13:04:09 -0300
+F, [2013-11-01T13:04:09.416717 #27786] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/print.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+W, [2013-11-01T13:04:24.637990 #27828]  WARN -- : Overwriting existing field _id in class CheckinItem.
+W, [2013-11-01T13:04:25.118054 #27828]  WARN -- : Creating scope :near. Overwriting existing method Store.near.
+I, [2013-11-01T13:04:26.916544 #27828]  INFO -- : Started GET "/stores/5252fdf424f1e7fbf7000004/orders" for 127.0.0.1 at 2013-11-01 13:04:26 -0300
+I, [2013-11-01T13:04:27.033417 #27828]  INFO -- : Processing by OrdersController#index as HTML
+I, [2013-11-01T13:04:27.033601 #27828]  INFO -- :   Parameters: {"store_id"=>"5252fdf424f1e7fbf7000004"}
+I, [2013-11-01T13:04:27.082441 #27828]  INFO -- :   Rendered orders/index.html.haml within layouts/application (8.1ms)
+I, [2013-11-01T13:04:27.209703 #27828]  INFO -- :   Rendered application/_top.html.haml (24.1ms)
+I, [2013-11-01T13:04:27.212223 #27828]  INFO -- : Completed 200 OK in 178ms (Views: 142.5ms)
+I, [2013-11-01T13:04:29.091599 #27828]  INFO -- : Started GET "/stores/5252fdf424f1e7fbf7000004/orders/5265264e5620a9b799000001/print_order" for 127.0.0.1 at 2013-11-01 13:04:29 -0300
+I, [2013-11-01T13:04:29.097768 #27828]  INFO -- : Processing by OrdersController#print_order as JS
+I, [2013-11-01T13:04:29.097995 #27828]  INFO -- :   Parameters: {"store_id"=>"5252fdf424f1e7fbf7000004", "id"=>"5265264e5620a9b799000001"}
+I, [2013-11-01T13:04:29.165389 #27828]  INFO -- :   Rendered orders/_print.html.haml (51.7ms)
+I, [2013-11-01T13:04:29.166021 #27828]  INFO -- :   Rendered orders/print_order.js.erb (54.3ms)
+I, [2013-11-01T13:04:29.166400 #27828]  INFO -- : Completed 200 OK in 68ms (Views: 59.6ms)
+I, [2013-11-01T13:04:29.187579 #27828]  INFO -- : Started GET "/stylesheets/print.css" for 127.0.0.1 at 2013-11-01 13:04:29 -0300
+F, [2013-11-01T13:04:29.191151 #27828] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/print.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:09:58.117129 #27828]  INFO -- : Started GET "/stores/5252fdf424f1e7fbf7000004/orders/5265264e5620a9b799000001/print_order" for 127.0.0.1 at 2013-11-01 13:09:58 -0300
+I, [2013-11-01T13:09:58.119580 #27828]  INFO -- : Processing by OrdersController#print_order as JS
+I, [2013-11-01T13:09:58.119803 #27828]  INFO -- :   Parameters: {"store_id"=>"5252fdf424f1e7fbf7000004", "id"=>"5265264e5620a9b799000001"}
+I, [2013-11-01T13:09:58.136135 #27828]  INFO -- :   Rendered orders/_print.html.haml (4.0ms)
+I, [2013-11-01T13:09:58.136729 #27828]  INFO -- :   Rendered orders/print_order.js.erb (4.9ms)
+I, [2013-11-01T13:09:58.137099 #27828]  INFO -- : Completed 200 OK in 17ms (Views: 5.9ms)
+I, [2013-11-01T13:09:58.153356 #27828]  INFO -- : Started GET "/stylesheets/print.css" for 127.0.0.1 at 2013-11-01 13:09:58 -0300
+F, [2013-11-01T13:09:58.156753 #27828] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/print.css"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  puma (2.5.1) lib/puma/server.rb:472:in `handle_request'
+  puma (2.5.1) lib/puma/server.rb:343:in `process_client'
+  puma (2.5.1) lib/puma/server.rb:242:in `block in run'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `call'
+  puma (2.5.1) lib/puma/thread_pool.rb:92:in `block in spawn_thread'
+
+
+I, [2013-11-01T13:10:37.738661 #27828]  INFO -- : Started GET "/stores/5252fdf424f1e7fbf7000004/orders" for 127.0.0.1 at 2013-11-01 13:10:37 -0300
+I, [2013-11-01T13:10:37.740345 #27828]  INFO -- : Processing by OrdersController#index as HTML
+I, [2013-11-01T13:10:37.740482 #27828]  INFO -- :   Parameters: {"store_id"=>"5252fdf424f1e7fbf7000004"}
+I, [2013-11-01T13:10:37.753401 #27828]  INFO -- :   Rendered orders/index.html.haml within layouts/application (1.2ms)
+I, [2013-11-01T13:10:37.761276 #27828]  INFO -- :   Rendered application/_top.html.haml (5.9ms)
+I, [2013-11-01T13:10:37.762575 #27828]  INFO -- : Completed 200 OK in 22ms (Views: 11.4ms)
+W, [2013-11-01T13:10:48.424910 #27947]  WARN -- : Overwriting existing field _id in class CheckinItem.
+W, [2013-11-01T13:10:48.893958 #27947]  WARN -- : Creating scope :near. Overwriting existing method Store.near.
+I, [2013-11-01T13:10:50.566750 #27947]  INFO -- : Started GET "/stores/5252fdf424f1e7fbf7000004/orders" for 127.0.0.1 at 2013-11-01 13:10:50 -0300
+I, [2013-11-01T13:10:50.689731 #27947]  INFO -- : Processing by OrdersController#index as HTML
+I, [2013-11-01T13:10:50.689990 #27947]  INFO -- :   Parameters: {"store_id"=>"5252fdf424f1e7fbf7000004"}
+I, [2013-11-01T13:10:50.744245 #27947]  INFO -- :   Rendered orders/index.html.haml within layouts/application (8.3ms)
+I, [2013-11-01T13:10:50.779917 #27947]  INFO -- :   Rendered application/_top.html.haml (20.0ms)
+I, [2013-11-01T13:10:50.781567 #27947]  INFO -- : Completed 200 OK in 91ms (Views: 49.3ms)
+I, [2013-11-01T13:10:52.591176 #27947]  INFO -- : Started GET "/stores/5252fdf424f1e7fbf7000004/orders/5265264e5620a9b799000001/print_order" for 127.0.0.1 at 2013-11-01 13:10:52 -0300
+I, [2013-11-01T13:10:52.597039 #27947]  INFO -- : Processing by OrdersController#print_order as JS
+I, [2013-11-01T13:10:52.597271 #27947]  INFO -- :   Parameters: {"store_id"=>"5252fdf424f1e7fbf7000004", "id"=>"5265264e5620a9b799000001"}
+I, [2013-11-01T13:10:52.669600 #27947]  INFO -- :   Rendered orders/_print.html.haml (50.9ms)
+I, [2013-11-01T13:10:52.670263 #27947]  INFO -- :   Rendered orders/print_order.js.erb (53.8ms)
+I, [2013-11-01T13:10:52.670640 #27947]  INFO -- : Completed 200 OK in 73ms (Views: 59.9ms)
+I, [2013-11-01T13:11:02.413592 #27947]  INFO -- : Started GET "/stores/5252fdf424f1e7fbf7000004/orders" for 127.0.0.1 at 2013-11-01 13:11:02 -0300
+I, [2013-11-01T13:11:02.416538 #27947]  INFO -- : Processing by OrdersController#index as HTML
+I, [2013-11-01T13:11:02.416814 #27947]  INFO -- :   Parameters: {"store_id"=>"5252fdf424f1e7fbf7000004"}
+I, [2013-11-01T13:11:02.427607 #27947]  INFO -- :   Rendered orders/index.html.haml within layouts/application (0.9ms)
+I, [2013-11-01T13:11:02.435737 #27947]  INFO -- :   Rendered application/_top.html.haml (6.0ms)
+I, [2013-11-01T13:11:02.437588 #27947]  INFO -- : Completed 200 OK in 20ms (Views: 11.4ms)
+W, [2013-11-01T13:11:13.008991 #27973]  WARN -- : Overwriting existing field _id in class CheckinItem.
+W, [2013-11-01T13:11:13.494105 #27973]  WARN -- : Creating scope :near. Overwriting existing method Store.near.
+I, [2013-11-01T13:11:14.940566 #27973]  INFO -- : Started GET "/stores/5252fdf424f1e7fbf7000004/orders" for 127.0.0.1 at 2013-11-01 13:11:14 -0300
+I, [2013-11-01T13:11:15.149705 #27973]  INFO -- : Processing by OrdersController#index as HTML
+I, [2013-11-01T13:11:15.150075 #27973]  INFO -- :   Parameters: {"store_id"=>"5252fdf424f1e7fbf7000004"}
+I, [2013-11-01T13:11:15.202788 #27973]  INFO -- :   Rendered orders/index.html.haml within layouts/application (9.4ms)
+I, [2013-11-01T13:11:15.248235 #27973]  INFO -- :   Rendered application/_top.html.haml (30.4ms)
+I, [2013-11-01T13:11:15.249686 #27973]  INFO -- : Completed 200 OK in 99ms (Views: 60.3ms)
+I, [2013-11-01T13:11:17.771667 #27973]  INFO -- : Started GET "/stores/5252fdf424f1e7fbf7000004/orders/5265264e5620a9b799000001/print_order" for 127.0.0.1 at 2013-11-01 13:11:17 -0300
+I, [2013-11-01T13:11:17.778509 #27973]  INFO -- : Processing by OrdersController#print_order as JS
+I, [2013-11-01T13:11:17.778742 #27973]  INFO -- :   Parameters: {"store_id"=>"5252fdf424f1e7fbf7000004", "id"=>"5265264e5620a9b799000001"}
+I, [2013-11-01T13:11:17.844767 #27973]  INFO -- :   Rendered orders/_print.html.haml (48.0ms)
+I, [2013-11-01T13:11:17.845474 #27973]  INFO -- :   Rendered orders/print_order.js.erb (50.7ms)
+I, [2013-11-01T13:11:17.845810 #27973]  INFO -- : Completed 200 OK in 67ms (Views: 55.9ms)
+W, [2013-12-26T21:05:43.002336 #9787]  WARN -- : Overwriting existing field _id in class CheckinItem.
+W, [2013-12-26T21:05:43.659301 #9787]  WARN -- : Overwriting existing field method in class PaymentKhipu.
+W, [2013-12-26T21:05:43.665537 #9787]  WARN -- : Overwriting existing field secret in class PaymentKhipu.
+W, [2013-12-26T21:06:18.454113 #9818]  WARN -- : Overwriting existing field _id in class CheckinItem.
+W, [2013-12-26T21:06:18.944988 #9818]  WARN -- : Overwriting existing field method in class PaymentKhipu.
+W, [2013-12-26T21:06:18.947274 #9818]  WARN -- : Overwriting existing field secret in class PaymentKhipu.
+I, [2013-12-26T21:06:21.068549 #9818]  INFO -- : Started GET "/" for 127.0.0.1 at 2013-12-26 21:06:21 -0300
+I, [2013-12-26T21:06:21.263752 #9818]  INFO -- : Processing by PagesController#index as HTML
+I, [2013-12-26T21:06:21.304202 #9818]  INFO -- :   Rendered pages/index.html.haml within layouts/application (34.4ms)
+I, [2013-12-26T21:06:21.335132 #9818]  INFO -- :   Rendered application/_top.html.haml (11.7ms)
+I, [2013-12-26T21:06:21.336911 #9818]  INFO -- : Completed 200 OK in 73ms (Views: 72.0ms)
+I, [2013-12-26T21:06:21.545299 #9818]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2013-12-26 21:06:21 -0300
+F, [2013-12-26T21:06:21.549559 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:06:21.575731 #9818]  INFO -- : Started GET "/static/print.css" for 127.0.0.1 at 2013-12-26 21:06:21 -0300
+F, [2013-12-26T21:06:21.580732 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/print.css"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:06:21.582309 #9818]  INFO -- : Started GET "/javascripts/modernizr.js" for 127.0.0.1 at 2013-12-26 21:06:21 -0300
+F, [2013-12-26T21:06:21.585373 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/modernizr.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:06:21.586912 #9818]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2013-12-26 21:06:21 -0300
+F, [2013-12-26T21:06:21.591731 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:06:21.615836 #9818]  INFO -- : Started GET "/static/beep.mp3" for 127.0.0.1 at 2013-12-26 21:06:21 -0300
+F, [2013-12-26T21:06:21.618951 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.mp3"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:06:21.623913 #9818]  INFO -- : Started GET "/static/beep.ogg" for 127.0.0.1 at 2013-12-26 21:06:21 -0300
+F, [2013-12-26T21:06:21.627562 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.ogg"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:08.019000 #9818]  INFO -- : Started GET "/" for 127.0.0.1 at 2013-12-26 21:08:08 -0300
+I, [2013-12-26T21:08:08.024806 #9818]  INFO -- : Processing by PagesController#index as HTML
+I, [2013-12-26T21:08:08.028344 #9818]  INFO -- :   Rendered pages/index.html.haml within layouts/application (2.1ms)
+I, [2013-12-26T21:08:08.031578 #9818]  INFO -- :   Rendered application/_top.html.haml (0.5ms)
+I, [2013-12-26T21:08:08.033672 #9818]  INFO -- : Completed 200 OK in 9ms (Views: 8.3ms)
+I, [2013-12-26T21:08:08.166947 #9818]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2013-12-26 21:08:08 -0300
+F, [2013-12-26T21:08:08.171573 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:08.173792 #9818]  INFO -- : Started GET "/static/print.css" for 127.0.0.1 at 2013-12-26 21:08:08 -0300
+F, [2013-12-26T21:08:08.177567 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/print.css"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:08.179288 #9818]  INFO -- : Started GET "/javascripts/modernizr.js" for 127.0.0.1 at 2013-12-26 21:08:08 -0300
+F, [2013-12-26T21:08:08.182573 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/modernizr.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:08.184020 #9818]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2013-12-26 21:08:08 -0300
+F, [2013-12-26T21:08:08.187390 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:08.249215 #9818]  INFO -- : Started GET "/static/beep.mp3" for 127.0.0.1 at 2013-12-26 21:08:08 -0300
+F, [2013-12-26T21:08:08.253646 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.mp3"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:08.258429 #9818]  INFO -- : Started GET "/static/beep.ogg" for 127.0.0.1 at 2013-12-26 21:08:08 -0300
+F, [2013-12-26T21:08:08.261519 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.ogg"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:13.846754 #9818]  INFO -- : Started GET "/" for 127.0.0.1 at 2013-12-26 21:08:13 -0300
+I, [2013-12-26T21:08:13.848719 #9818]  INFO -- : Processing by PagesController#index as HTML
+I, [2013-12-26T21:08:13.852488 #9818]  INFO -- :   Rendered pages/index.html.haml within layouts/application (2.3ms)
+I, [2013-12-26T21:08:13.854875 #9818]  INFO -- :   Rendered application/_top.html.haml (0.3ms)
+I, [2013-12-26T21:08:13.856573 #9818]  INFO -- : Completed 200 OK in 8ms (Views: 7.2ms)
+I, [2013-12-26T21:08:13.995801 #9818]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2013-12-26 21:08:13 -0300
+F, [2013-12-26T21:08:14.000972 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:14.002431 #9818]  INFO -- : Started GET "/javascripts/modernizr.js" for 127.0.0.1 at 2013-12-26 21:08:14 -0300
+F, [2013-12-26T21:08:14.005523 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/modernizr.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:14.006907 #9818]  INFO -- : Started GET "/static/print.css" for 127.0.0.1 at 2013-12-26 21:08:14 -0300
+F, [2013-12-26T21:08:14.010128 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/print.css"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:14.011477 #9818]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2013-12-26 21:08:14 -0300
+F, [2013-12-26T21:08:14.015425 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:14.081702 #9818]  INFO -- : Started GET "/static/beep.mp3" for 127.0.0.1 at 2013-12-26 21:08:14 -0300
+F, [2013-12-26T21:08:14.084819 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.mp3"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:14.089588 #9818]  INFO -- : Started GET "/static/beep.ogg" for 127.0.0.1 at 2013-12-26 21:08:14 -0300
+F, [2013-12-26T21:08:14.092469 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.ogg"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:37.203277 #9818]  INFO -- : Started GET "/" for 127.0.0.1 at 2013-12-26 21:08:37 -0300
+I, [2013-12-26T21:08:37.206045 #9818]  INFO -- : Processing by PagesController#index as HTML
+I, [2013-12-26T21:08:37.209775 #9818]  INFO -- :   Rendered pages/index.html.haml within layouts/application (2.2ms)
+I, [2013-12-26T21:08:37.212675 #9818]  INFO -- :   Rendered application/_top.html.haml (0.4ms)
+I, [2013-12-26T21:08:37.214745 #9818]  INFO -- : Completed 200 OK in 8ms (Views: 8.0ms)
+I, [2013-12-26T21:08:37.410619 #9818]  INFO -- : Started GET "/static/print.css" for 127.0.0.1 at 2013-12-26 21:08:37 -0300
+F, [2013-12-26T21:08:37.521306 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/print.css"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:37.522886 #9818]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2013-12-26 21:08:37 -0300
+F, [2013-12-26T21:08:37.526160 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:37.527879 #9818]  INFO -- : Started GET "/javascripts/modernizr.js" for 127.0.0.1 at 2013-12-26 21:08:37 -0300
+F, [2013-12-26T21:08:37.533405 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/modernizr.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:37.534823 #9818]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2013-12-26 21:08:37 -0300
+F, [2013-12-26T21:08:37.538075 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:37.546793 #9818]  INFO -- : Started GET "/static/beep.mp3" for 127.0.0.1 at 2013-12-26 21:08:37 -0300
+F, [2013-12-26T21:08:37.550747 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.mp3"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:37.555736 #9818]  INFO -- : Started GET "/static/beep.ogg" for 127.0.0.1 at 2013-12-26 21:08:37 -0300
+F, [2013-12-26T21:08:37.559062 #9818] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.ogg"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+W, [2013-12-26T21:08:48.999620 #10073]  WARN -- : Overwriting existing field _id in class CheckinItem.
+W, [2013-12-26T21:08:49.389938 #10073]  WARN -- : Overwriting existing field method in class PaymentKhipu.
+W, [2013-12-26T21:08:49.392444 #10073]  WARN -- : Overwriting existing field secret in class PaymentKhipu.
+I, [2013-12-26T21:08:51.652833 #10073]  INFO -- : Started GET "/" for 127.0.0.1 at 2013-12-26 21:08:51 -0300
+I, [2013-12-26T21:08:51.791864 #10073]  INFO -- : Processing by PagesController#index as HTML
+I, [2013-12-26T21:08:51.793332 #10073]  INFO -- : Redirected to http://localhost:3000/accounts/sign_in
+I, [2013-12-26T21:08:51.793569 #10073]  INFO -- : Completed 302 Found in 1ms
+I, [2013-12-26T21:08:51.798978 #10073]  INFO -- : Started GET "/accounts/sign_in" for 127.0.0.1 at 2013-12-26 21:08:51 -0300
+I, [2013-12-26T21:08:51.804406 #10073]  INFO -- : Processing by Devise::SessionsController#new as HTML
+I, [2013-12-26T21:08:51.903447 #10073]  INFO -- :   Rendered accounts/shared/_links.haml (3.3ms)
+I, [2013-12-26T21:08:51.904572 #10073]  INFO -- :   Rendered accounts/sessions/new.html.haml within layouts/application (60.9ms)
+I, [2013-12-26T21:08:52.035062 #10073]  INFO -- :   Rendered application/_top.html.haml (12.7ms)
+I, [2013-12-26T21:08:52.036810 #10073]  INFO -- : Completed 200 OK in 232ms (Views: 200.8ms)
+I, [2013-12-26T21:08:52.208245 #10073]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2013-12-26 21:08:52 -0300
+F, [2013-12-26T21:08:52.212158 #10073] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:52.214509 #10073]  INFO -- : Started GET "/static/print.css" for 127.0.0.1 at 2013-12-26 21:08:52 -0300
+F, [2013-12-26T21:08:52.218619 #10073] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/print.css"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:52.220285 #10073]  INFO -- : Started GET "/javascripts/modernizr.js" for 127.0.0.1 at 2013-12-26 21:08:52 -0300
+F, [2013-12-26T21:08:52.225024 #10073] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/modernizr.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:52.226358 #10073]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2013-12-26 21:08:52 -0300
+F, [2013-12-26T21:08:52.230802 #10073] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:52.237334 #10073]  INFO -- : Started GET "/images/logo.png" for 127.0.0.1 at 2013-12-26 21:08:52 -0300
+F, [2013-12-26T21:08:52.242621 #10073] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:52.276185 #10073]  INFO -- : Started GET "/static/beep.mp3" for 127.0.0.1 at 2013-12-26 21:08:52 -0300
+F, [2013-12-26T21:08:52.284598 #10073] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.mp3"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+I, [2013-12-26T21:08:52.299314 #10073]  INFO -- : Started GET "/static/beep.ogg" for 127.0.0.1 at 2013-12-26 21:08:52 -0300
+F, [2013-12-26T21:08:52.302244 #10073] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/static/beep.ogg"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.1) lib/thin/connection.rb:82:in `block in pre_process'
+  thin (1.6.1) lib/thin/connection.rb:80:in `catch'
+  thin (1.6.1) lib/thin/connection.rb:80:in `pre_process'
+  thin (1.6.1) lib/thin/connection.rb:55:in `process'
+  thin (1.6.1) lib/thin/connection.rb:41:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.1) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.1) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.0.2) lib/rails/commands/server.rb:84:in `start'
+  railties (4.0.2) lib/rails/commands.rb:76:in `block in <top (required)>'
+  railties (4.0.2) lib/rails/commands.rb:71:in `tap'
+  railties (4.0.2) lib/rails/commands.rb:71:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+

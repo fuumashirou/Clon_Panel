@@ -1,0 +1,20 @@
+%h1 Monedas
+
+%table
+  %thead
+    %tr
+      %th Currency
+      %th
+      %th
+      %th
+  %tbody
+    - @currencies.each do |currency|
+      %tr
+        %td= currency.currency
+        %td= link_to 'Show', currency
+        %td= link_to 'Edit', edit_currency_path(currency)
+        %td= link_to 'Destroy', currency, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'Nueva moneda', new_currency_path, class: "button small"

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  method: MyString
+  receiver_id: MyString
+  secret: MyString
+
+two:
+  method: MyString
+  receiver_id: MyString
+  secret: MyString

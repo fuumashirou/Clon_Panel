@@ -1,0 +1,20 @@
+= simple_form_for [@store, @song] do |f|
+  = f.error_notification
+
+  .row
+    .small-12.columns
+      .field
+    = f.input :artist
+  .row
+    .small-12.columns
+      .field
+    = f.input :title
+  .row
+    .small-12.columns
+      .field
+    = f.input :category
+
+  .row.button-div
+    .small-8.small-centered.columns
+      = f.submit "Guardar", class: "button radius"
+      = link_to "Cancelar", [@store, :songs], class: "button secondary radius"

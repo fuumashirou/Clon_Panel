@@ -1,0 +1,35 @@
+- if is_primary?
+  .right
+    = link_to "Administrar cuentas", [:manage, @store], class: "button small"
+%h1= @store.name
+
+%p
+  %b Descripcion:
+  = @store.description
+%p
+  %b Direccion:
+  = @store.address
+%p
+  %b Web:
+  = @store.web
+%p
+  %b Facebook:
+  = @store.facebook
+%p
+  %b Twitter:
+  = @store.twitter
+%p
+  %b Ciudad:
+  = @store.city
+%p
+  %b Telefono:
+  = @store.phone
+%p
+  %b Categoria:
+  = @store.category
+%p
+  %b Propina:
+  = @store.tipping ? number_to_percentage(@store.tip_amount, precision: 1) : @store.tipping
+
+- if is_primary?
+  = link_to 'Modificar', [:edit, @store], class: "button small"

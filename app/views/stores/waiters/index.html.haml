@@ -1,0 +1,27 @@
+%h1 Codigo de registro
+
+%p
+  = qr_image @store.waiter_token, { image: true, size: "200x200" }
+  %br
+  = link_to "Cambiar QR", [:change_token, @store], class: "button small", method: :patch
+  - if admin_signed_in?
+    %p
+      %b QR (Solo Admin):
+      = @store.waiter_token
+
+
+#waiter-status connecting ...
+#store-id= @store._id
+
+.row
+  .large-6.columns
+    %h2 Meseros
+    %table
+      %thead
+        %tr
+          %th Usuario
+          %th Verificado
+          %th Checkeado el
+          %th
+          %th
+      %tbody.waiter

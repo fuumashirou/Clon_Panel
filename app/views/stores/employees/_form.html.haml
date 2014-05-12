@@ -1,0 +1,22 @@
+= simple_form_for [@store, @employee] do |f|
+  = render "errors", record: @employee
+
+  .row
+    .small-12.columns
+      .field
+        = f.label :username
+        = f.text_field :username
+  .row
+    .small-6.columns
+      .field
+        = f.label :password
+        = f.password_field :password
+    .small-6.columns
+      .field
+        = f.label :password_confirmation
+        = f.password_field :password_confirmation
+
+  .row.button-div
+    .small-8.small-centered.columns
+      = f.submit "Guardar", class: "button radius"
+      = link_to "Cancelar", [:manage, @store], class: "button secondary radius"

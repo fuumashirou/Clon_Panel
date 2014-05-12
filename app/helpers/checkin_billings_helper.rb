@@ -1,0 +1,2 @@
+module CheckinBillingsHelper
+end

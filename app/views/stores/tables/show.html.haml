@@ -1,0 +1,38 @@
+%h1= "Mesa ##{@table.number}"
+
+= qr_image @table.token, size: "200x200"
+
+- if admin_signed_in?
+  %p
+    %b QR (Solo Admin):
+    = u(@table.token)
+
+- unless @current_checkin.nil?
+  %p In use
+
+%p
+  %b Checkins
+
+  %table
+    %thead
+      %tr
+        %th
+        %th Llegada
+        %th Salida
+        %th Cambiar mesa
+        %th Fusionar
+        %th
+    %tbody
+      - @checkins.each do |checkin|
+        %tr
+          %td= link_to "Ver detalles", store_checkin_path(@store, checkin.id)
+          %td= l checkin.arrive_at, format: :long
+          %td
+            - if checkin.leave_at.nil?
+              = link_to "Cerrar", leave_store_checkin_path(@store, checkin.id), method: :delete
+            - else
+              = l checkin.leave_at, format: :long
+          - if checkin.leave_at.nil?
+            = render "change_table", checkin: checkin.id
+
+= link_to 'Volver', [@store, :tables]

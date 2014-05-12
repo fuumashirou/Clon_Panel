@@ -1,0 +1,26 @@
+= simple_form_for [@store, @contact] do |f|
+  = render "errors", record: @contact
+
+  .row
+    .small-6.columns
+      .field
+        = f.label :name
+        = f.text_field :name
+    .small-6.columns
+      .field
+        = f.label :email
+        = f.text_field :email
+  .row
+    .small-6.columns
+      .field
+        = f.label :phone
+        = f.text_field :phone
+    .small-6.columns
+      .field
+        = f.label :position
+        = f.text_field :position
+
+  .row.button-div
+    .small-8.small-centered.columns
+      = f.submit "Guardar", class: "button radius"
+      = link_to "Cancelar", [:manage, @store], class: "button secondary radius"

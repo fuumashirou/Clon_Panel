@@ -1,0 +1,16 @@
+= simple_form_for [@store, @category], html: { class: "custom"} do |f|
+  = f.error_notification
+
+  .inputs
+    = f.label :type
+    = f.select :type, Item::TYPES
+  .inputs
+    = f.input :name
+  .inputs
+    = f.label :description
+    = f.text_area :description
+
+  .row.button-div
+    .small-8.small-centered.columns
+      = f.submit "Guardar", class: "button radius"
+      = link_to "Cancelar", [@store, :categories], class: "button secondary radius"

@@ -1,0 +1,46 @@
+%h1 Menu
+= link_to 'Promociones', [@store, :promotions], class: "button alert small" unless @store.items.empty?
+- if is_primary?
+  = link_to 'Agregar Item', [:new, @store, :item], class: "button small"
+  = link_to "Subir menu", store_menu_new_path(@store), class: "button small"
+  = link_to 'Administrar categorias', [@store, :categories], class: "button small"
+= link_to 'Administrar selecciones', [@store, :selections], class: "button small"
+
+- unless @items.empty?
+
+  .row
+    .large-4.columns
+      %h2 Resumen
+
+      %table
+        %thead
+          %tr
+            %th Type
+            %th Category
+            %th Items
+        %tbody
+        - quantity = 0
+        - @store.categories.each do |category|
+          - quantity += category.items
+          %tr
+            %td= category.type
+            %td= category.name
+            %td= category.items
+        %tr{style: "background: #3c3c3c;"}
+          %td{style: "color: white;"}
+            %b= "Total"
+          %td
+          %td{style: "color: white;"}
+            %b= quantity
+
+    .large-8
+      %h2 Items
+
+    #items-menu
+      = render "items", items: @items
+
+- else
+  .rom
+    .large-12
+      No se encontraron items en el menu
+

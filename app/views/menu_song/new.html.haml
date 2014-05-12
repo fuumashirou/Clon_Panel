@@ -1,0 +1,15 @@
+%h1 Subir Canciones
+
+%p Para subir las canciones, debe hacerlo descargando el template adjunto, agregar las canciones que tienen y luego subirlo.
+
+%p= link_to "Descargar template", "/static/songs_template.xlsx"
+
+= form_tag store_menu_song_create_path(@store), multipart: true, method: :post do
+  .field
+    = label_tag :file
+    = file_field_tag :file
+
+  .row.button-div
+    .small-8.small-centered.columns
+      = submit_tag "Guardar", class: "button radius"
+      = link_to "Cancelar", [@store, :songs], class: "button secondary radius"

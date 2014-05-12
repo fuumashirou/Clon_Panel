@@ -1,0 +1,59 @@
+= simple_form_for [@store, @happy_hour], url: store_happy_hour_path(@store, @happy_hour) do |f|
+  = f.error_notification
+
+  .row
+    = f.label :active
+    = f.radio_button :active, true, checked: true
+    = f.label :active, "Activado", value: true, style: "display:inline"
+    = f.radio_button :active, false
+    = f.label :active, "Desactivado", value: false, style: "display:inline"
+
+  .row
+    %h2 Reglas
+    = f.fields_for :rules do |rules|
+      = rules.label :quantity
+      = rules.select :quantity, [1,2]
+
+      = rules.label :personal
+      = rules.radio_button :personal, false
+      = rules.label :personal, "Individual", value: false, style: "display:inline"
+      = rules.radio_button :personal, true, checked: true
+      = rules.label :personal, "Compartido", value: true, style: "display:inline"
+
+      = rules.label :free_selection
+      = rules.radio_button :free_selection, false
+      = rules.label :free_selection, "Iguales", value: false, style: "display:inline"
+      = rules.radio_button :free_selection, true, checked: true
+      = rules.label :free_selection, "Distintos", value: true, style: "display:inline"
+
+  .row
+    %h2 Horarios
+    - Schedule::DAYS_OF_THE_WEEK.each do |day|
+      .large-3.columns.left
+        %ul.pricing-table
+          %li.title= day.capitalize
+          %li.description
+            .row
+              .small-12
+                .row
+                  .small-2.columns
+                    = check_box_tag "happy_hour[schedules][#{day}][active]", true, (@happy_hour.new_record? ? true : @happy_hour["schedules"][day]["active"]), class: "right inline"
+                  .small-10.columns
+                    = label_tag :active, nil, id: "right-label"
+              %p
+              .small-12
+                .row
+                  .small-2.columns
+                    = check_box_tag "happy_hour[schedules][#{day}][all_day]", true, (@happy_hour.new_record? ? false : @happy_hour["schedules"][day]["all_day"]), class: "right inline"
+                  .small-10.columns
+                    = label_tag :all_day, nil, id: "right-label"
+          %li.bullet-item
+            = label_tag :start_time
+            = text_field_tag "happy_hour[schedules][#{day}][start_time]", (@happy_hour.new_record? ? nil : seconds_to_time(@happy_hour["schedules"][day]["start_time"], :time)), class: "timepicker"
+            = label_tag :end_time
+            = text_field_tag "happy_hour[schedules][#{day}][end_time]", (@happy_hour.new_record? ? nil : seconds_to_time(@happy_hour["schedules"][day]["end_time"], :time)), class: "timepicker"
+
+  .row.button-div
+    .small-8.small-centered.columns
+      = f.button :submit, class: "button radius"
+      = link_to "Cancelar", [@store, :happy_hour], class: "button secondary radius"

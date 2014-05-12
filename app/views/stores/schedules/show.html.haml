@@ -1,0 +1,28 @@
+%h1 Horarios
+
+- if is_primary?
+  - if @schedule.nil?
+    Necesita definir el horario de atención del local.
+    %br= link_to "Definir horario", [:new, @store, :schedule], class: "button small"
+  - else
+    = link_to "Modificar horario", [:edit, @store, :schedule], class: "button small"
+
+.row
+  - unless @schedule.nil?
+    - Store::Schedule::DAYS_OF_THE_WEEK.each do |day|
+      .large-3.columns.left
+        %ul.pricing-table
+          %li.title=t day.capitalize
+          %li.description
+            %b Activo:
+            = @schedule[day]["active"].humanize
+            %br
+            %b Todo el dia:
+            = @schedule[day]["all_day"].humanize
+          - if @schedule[day]["all_day"] == false
+            %li.bullet-item
+              %b Apertura:
+              = seconds_to_time @schedule[day]["start_time"], :time
+              %br
+              %b Cierre:
+              = seconds_to_time @schedule[day]["end_time"], :time

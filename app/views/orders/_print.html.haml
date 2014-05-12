@@ -1,0 +1,51 @@
+- if @order
+  - object = @order
+  - items  = @items
+  - total  = 0
+- else
+  - object = @bill
+  - items  = ActiveSupport::JSON.decode(object["items"])
+  - total  = object["total"].to_f
+  - discount = object["discount"].to_f
+
+%section.print
+  .table= "Mesa ##{object["table_number"]}"
+  .date= "Fecha: #{l(Time.now, format: :short)}"
+  %article.items
+    .title Detalle
+    %table.table
+      %thead
+        %tr
+          %th Nombre
+          %th Cantidad
+          %th Precio
+      %tbody
+        - items.each do |item|
+          %tr
+            %td= item["name"]
+            %td= item["quantity"]
+            %td= number_to_currency item["price"].to_f
+            - if @order
+              - total += item["price"].to_f * item["quantity"].to_i
+        - if @bill && discount != 0
+          %tr
+            %td.total Subtotal:
+            %td
+            %td= "#{number_to_currency total}"
+          %tr
+            %td.total Descuento:
+            %td
+            %td= "#{number_to_currency discount}"
+          %tr
+            %td.total Total:
+            %td
+            %td= "#{number_to_currency total - discount}"
+        - else
+          %tr
+            %td.total Total:
+            %td
+            %td= "#{number_to_currency total}"
+
+- if @store.tipping
+  - tip = @store.tip_amount
+  .tip= "Propina sugerida #{number_to_percentage tip, precision: 1}: #{number_to_currency total * ( tip / 100 )}"

@@ -1,0 +1,24 @@
+%h1= "Editar orden de mesa ##{@order['table_number']}"
+
+= form_tag store_order_path(@store, @order['id']), method: :patch do
+
+  %br
+  %table
+    %thead
+      %tr
+        %th Eliminar
+        %th Item
+        %th Cantidad
+        %th Precio
+    %tbody
+    - @items.each do |item|
+      %tr
+        %td= check_box_tag "item_ids[]", item["id"]
+        %td= item["name"]
+        %td= item["quantity"]
+        %td= number_to_currency item["price"]
+
+  .row.button-div
+    .small-8.small-centered.columns
+      = submit_tag "Guardar", class: "button radius"
+      = link_to "Cancelar", [@store, :orders], class: "button secondary radius"

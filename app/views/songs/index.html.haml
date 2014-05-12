@@ -1,0 +1,40 @@
+%h1 Canciones
+
+= link_to 'Agregar Cancion', [:new, @store, :song], class: "button small"
+
+
+
+- unless @songs.empty?
+
+  .row
+    .large-4.columns
+      %h2 Resumen
+
+      %table
+        %thead
+          %tr
+            %th Category
+            %th Canciones
+        %tbody
+        - categories = @songs.distinct(:category)
+        - categories.each do |category|
+          %tr
+            %td= category
+            %td= @songs.where(category: category).count
+        %tr{style: "background: #3c3c3c;"}
+          %td{style: "color: white;"}
+            %b= "Total"
+          %td{style: "color: white;"}
+            %b= @songs.count
+
+    .large-8
+      %h2 Canciones
+
+    #items-menu
+      = render "songs", songs: @songs
+
+- else
+  .rom
+    .large-12
+      No se encontraron canciones en el menu
+

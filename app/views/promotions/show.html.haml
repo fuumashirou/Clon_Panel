@@ -1,0 +1,27 @@
+%p
+  = image_tag @promotion.image
+
+%p
+  %b Inicio:
+  =l @promotion.start_at, format: :short
+%p
+  %b Termino:
+  =l @promotion.end_at, format: :short
+%p
+  %b Activo:
+  = @promotion.active
+
+  %h3 Items
+
+  %table
+    %thead
+      %tr
+        %th Name
+    %tbody
+      - @promotion.items.each do |item|
+        %tr
+          %td= item.name
+
+= link_to 'Editar', [:edit, @store, @promotion]
+\|
+= link_to 'Volver', [@store, :promotions]

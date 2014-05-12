@@ -1,0 +1,13 @@
+%p#notice= notice
+
+%p
+  %b Date:
+  = @billing.date
+%p
+  %b Amount:
+  = @billing.amount
+%p
+  %b Paid:
+  = @billing.paid
+
+= link_to 'Back', [@store, @billing]

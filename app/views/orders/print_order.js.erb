@@ -1,0 +1,8 @@
+var mywindow;
+mywindow = window.open("", "print", "height=400,width=600");
+mywindow.document.write("<%=j render partial: 'print', layout: 'layouts/print' %>");
+mywindow.print();
+setTimeout(function() {
+  mywindow.close();
+}, 100);
+

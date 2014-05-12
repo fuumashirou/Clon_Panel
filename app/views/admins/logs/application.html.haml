@@ -1,0 +1,11 @@
+%ul
+  %li= link_to "Aplicacion", admins_logs_application_path
+  %li= link_to "Produccion", admins_logs_production_path
+  %li= link_to "Sidekiq", admins_logs_sidekiq_path
+
+.tab-pane#application
+  .file-content.logs
+    %ol
+      - Twable::AppLogger.read_latest.each do |line|
+        %li
+          %p= line

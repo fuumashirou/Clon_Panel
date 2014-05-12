@@ -1,0 +1,45 @@
+.row
+  .large-5.columns
+    %h2 Cuentas
+
+    %table
+      %thead
+        %tr
+          %th Usuario
+          %th
+          %th
+
+      %tbody
+        - @store.employees.each do |account|
+          %tr
+            %td= account
+            %td= link_for "edit", @store, account
+            %td= link_for "delete", @store, account
+
+    - if is_primary?
+      = link_to 'Nueva cuenta', [:new, @store, :employee], class: "button small"
+
+  .large-7.columns
+    %h2 Contactos
+
+    %table
+      %thead
+        %tr
+          %th Nombre
+          %th Posicion
+          %th Correo
+          %th Telefono
+          %th
+          %th
+      %tbody
+        - @store.contacts.each do |contact|
+          %tr
+            %td= contact.name
+            %td= contact.position
+            %td= contact.email
+            %td= contact.phone
+            %td= link_for "edit", @store, contact
+            %td= link_for "delete", @store, contact unless contact.primary
+
+    - if is_primary?
+      = link_to 'Nuevo contacto', [:new, @store, :contact], class: "button small"

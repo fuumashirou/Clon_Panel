@@ -1,0 +1,26 @@
+%h1 Indice
+
+%p
+  Admin:
+  - if admin_signed_in?
+    %p
+      %b= "Bienvenido #{current_admin.email}"
+      %br
+      = link_to "Locales", stores_path
+      %br
+      = link_to "Usuarios", users_path
+%p
+  Account:
+  - if current_user
+    %b= "Bienvenido #{current_user}"
+    = "(#{current_user.class.name})"
+    %br
+    = link_to current_store, current_store
+  - else
+    = link_to "Nuevo", new_manager_registration_path
+
+- if current_user
+  = link_to "Salir", destroy_account_session_path, method: :delete
+
+- else
+  = link_to "Ingresar", new_account_session_path

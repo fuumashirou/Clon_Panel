@@ -1,0 +1,20 @@
+= f.fields_for :contacts do |contact|
+
+  .row
+    .small-6.columns
+      .field
+        = contact.label :name
+        = contact.text_field :name
+    .small-6.columns
+      .field
+        = contact.label :position
+        = contact.text_field :position
+  .row
+    .small-6.columns
+      .field
+        = contact.label :email
+        = contact.text_field :email
+    .small-6.columns
+      .field
+        = contact.label :phone
+        = contact.text_field :phone

@@ -1,0 +1,26 @@
+%h1 Listing users
+
+%table
+  %thead
+    %tr
+      %th Username
+      %th Device
+      %th Verified
+      %th Token
+      %th Token count
+      %th Token device
+      %th Verified at
+      %th Created at
+      %th
+  %tbody
+    - @users.each do |user|
+      %tr
+        %td= link_to user._id, user_path(user._id)
+        %td= user.device
+        %td= user.verified
+        %td= user.token
+        %td= user.token_count
+        %td= user.token_device
+        %td= user.verified_at
+        %td= user.created_at
+        %td= link_to 'Destroy', user, :method => :delete, :data => { :confirm => 'Are you sure?' }

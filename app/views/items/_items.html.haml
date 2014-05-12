@@ -1,0 +1,44 @@
+%p
+  .large-6.columns
+    = form_tag store_items_path, method: :get do
+      .row.collapse
+        .small-3.columns
+          = select_tag :type, options_for_select([["Nombre", "name"], ["Categoria", "category"]],  params[:type]), class: "prefix"
+        .small-7.columns
+          = text_field_tag :query, params[:query]
+        .small-2.columns
+          = submit_tag "Buscar", class: "button postfix"
+
+%br
+%p
+  %table
+    %thead
+      %tr
+        %th Name
+        %th Price
+        %th Category
+        - unless @store.happy_hour?
+          %th Happy Hour
+        %th= link_to_unless items.empty?, 'Stock', multi_stock_store_items_path(@store), data: { confirm: "Cambiaras el stock de todos los items" }
+        %th
+        %th
+        %th
+    %tbody
+      - items.each do |item|
+        - stock = $redis.hget("Store:#{@store._id}:Item", item._id) == "true" ? true : false
+        %tr
+          %td= item.name
+          %td= number_to_currency item.price
+          %td= item.category
+          - unless @store.happy_hour?
+            %td= item.happy_hour == true ? "Si" : "No"
+          %td
+            %ul.button-group
+              %li
+                = stock == true ? "Si" : "No"
+                |
+                = link_to "cambiar", stock_store_item_path(@store, item, stock: !stock), method: :patch, remote: true, data: { confirm: "Estas seguro?" }
+          - if is_primary?
+            %td= link_for 'view', @store, item
+            %td= link_for 'edit', @store, item
+            %td= link_for 'delete', @store, item

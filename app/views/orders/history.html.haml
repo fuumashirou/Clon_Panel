@@ -1,0 +1,16 @@
+%h1 Historial de ordenes
+
+%br
+
+%table
+  %thead
+    %tr
+      %th Mesa
+      %th Fecha
+      %th Items
+  %tbody
+    - @orders.each do |order|
+      %tr
+        %td= order.table_number
+        %td=l order.ordered_at, format: :short
+        %td= order.items.map {|item| "#{item['name']}: #{item['quantity']}" }.join("<br />").html_safe

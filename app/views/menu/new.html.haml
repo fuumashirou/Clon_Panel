@@ -1,0 +1,14 @@
+%h1 Subir menu
+
+%p= link_to "Descargar template", "/static/menu_template.xlsx"
+%p Las alternativas de items deben ser agregadas manualmente luego de subir los items.
+
+= form_tag store_menu_create_path(@store), multipart: true, method: :post do
+  .field
+    = label_tag :file
+    = file_field_tag :file
+
+  .row.button-div
+    .small-8.small-centered.columns
+      = submit_tag "Guardar", class: "button radius"
+      = link_to "Cancelar", [@store, :items], class: "button secondary radius"

@@ -1,0 +1,51 @@
+- result = JSON.parse(@response.body)
+= simple_form_for @store, html: { class: "custom"} do |f|
+  - if result["results"].length == 0
+    %p
+      %b No se encontro la ubicacion de su local
+      %br .. Ingreso manual ..
+  - else
+    - @location = result["results"][0]
+
+    %p
+      %b Direccion:
+      = @location["formatted_address"]
+      = f.hidden_field :address, value: @location["formatted_address"]
+
+    %p
+      %b Coordenadas:
+      = "lat: #{@location["geometry"]["location"]["lat"]}, lng: #{@location["geometry"]["location"]["lng"]}"
+      = hidden_field_tag "store[loc][lat]", "#{@location["geometry"]["location"]["lat"]}"
+      = hidden_field_tag "store[loc][lon]", "#{@location["geometry"]["location"]["lng"]}"
+
+    #map-container
+      #map
+
+  .row.button-div
+    .small-8.small-centered.columns
+      = f.submit "Continuar", class: "button radius"
+
+- if @location
+  = content_for :head do
+    = stylesheet_link_tag "//api.tiles.mapbox.com/mapbox.js/v1.5.2/mapbox.css"
+    = javascript_include_tag "//api.tiles.mapbox.com/mapbox.js/v1.5.2/mapbox.js"
+
+  = content_for :javascript do
+    :javascript
+      var coords = #{[@location["geometry"]["location"]["lat"], @location["geometry"]["location"]["lng"]]};
+      var map = L.mapbox.map('map', 'examples.map-vyofok3q')
+        .setView(coords, 16);
+
+      L.mapbox.markerLayer({
+          type: 'Feature',
+          geometry: {
+              type: 'Point',
+              coordinates: coords.reverse()
+          },
+          properties: {
+              title: '#{escape_javascript @store.name}',
+              'marker-size': 'medium',
+              'marker-color': '#ED1260',
+              'marker-symbol': 'bar'
+          }
+      }).addTo(map);

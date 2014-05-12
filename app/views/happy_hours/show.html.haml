@@ -1,0 +1,46 @@
+%h1 Happy Hour
+
+- if is_primary?
+  - unless @happy_hour
+    El Happy Hour no se encuentra habilitado.
+    %br= link_to "Habilitar", [:new, @store, :happy_hour], class: "button small"
+  - else
+    = link_to 'Modificar', [:edit, @store, :happy_hour], class: "button small"
+
+- if @happy_hour
+  - rules = @happy_hour.rules
+  %p
+    %b Activo:
+    = @happy_hour.active.humanize
+
+  %p
+    %b Cantidad:
+    = rules.quantity
+
+    %br
+    %b Individual/compartido:
+    = rules.personal.humanize
+    %br
+    %b Distintos/iguales:
+    = rules.free_selection.humanize
+
+  %p
+    %h2 Horarios
+    - schedules = @happy_hour.schedules
+    - Schedule::DAYS_OF_THE_WEEK.each do |day|
+      .large-3.columns.left
+        %ul.pricing-table
+          %li.title= day.capitalize
+          %li.description
+            %b Activo:
+            = schedules[day]["active"].humanize
+            %br
+            %b Todo el dia:
+            = schedules[day]["all_day"].humanize
+          - if schedules[day]["all_day"] == false
+            %li.bullet-item
+              %b Inicio:
+              = seconds_to_time schedules[day]["start_time"], :time
+              %br
+              %b Fin:
+              = seconds_to_time schedules[day]["end_time"], :time

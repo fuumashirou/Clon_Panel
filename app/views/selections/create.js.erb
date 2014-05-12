@@ -1,0 +1,22 @@
+var index, remove_index, remove_selection_ids, selection_id, selection_ids;
+
+selection_id  = '<%= escape_javascript @selection._id.to_s %>';
+selection_ids = $("#item_alternatives").val().split(",");
+remove_selection_ids = $("#item_remove_alternatives").val().split(",");
+
+index = selection_ids.indexOf(selection_id);
+remove_index = remove_selection_ids.indexOf(selection_id);
+
+if (index == -1) {
+  if (remove_index > -1) {
+    remove_selection_ids.splice(remove_index, 1);
+  }
+  $("#item_remove_alternatives").val(remove_selection_ids.join(","));
+
+  selection_ids.push(selection_id);
+  selection_ids = $.grep(selection_ids, function(n) {
+    return n;
+  });
+  $("#item_alternatives").val(selection_ids.join(","));
+  $(".selections").append('<tr><td><%= escape_javascript @selection.title %></td><%= escape_javascript link_for("edit", @store, @selection) %><td><%= escape_javascript link_for("edit", @store, @selection) %></td><td><%= escape_javascript link_to(content_tag(:div, nil, class: "delete remove_selection", id: @selection._id), "#") %></td></tr>');
+}

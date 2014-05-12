@@ -1,0 +1,9 @@
+%h1 Configurar forma de pago
+
+= form_for [@store, @payment_method.becomes(PaymentMethod)] do |f|
+  - f.object = @payment_method.becomes(@payment_method.class)
+  = render "payment_methods/methods/#{params[:method]}", f: f
+  = f.hidden_field :method, value: params[:method]
+  = f.button "Guardar", class: "button secondary radius"
+
+= link_to 'Back', [@store, :payment_methods]

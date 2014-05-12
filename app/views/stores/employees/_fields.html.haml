@@ -1,0 +1,16 @@
+= f.fields_for :employees do |employee|
+
+  .row
+    .small-6.columns
+      .field
+        = employee.label :username
+        = employee.text_field :username
+  .row
+    .small-6.columns
+      .field
+        = employee.label :password
+        = employee.password_field :password
+    .small-6.columns
+      .field
+        = employee.label :password_confirmation
+        = employee.password_field :password_confirmation

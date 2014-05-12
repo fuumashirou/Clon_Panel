@@ -1,0 +1,21 @@
+.row.selection
+  .small-6.columns
+    = link_to "usar opcion existente", "#", class: "use_template"
+    = f.label :title
+    = f.text_field :title, class: "selection-title"
+    = f.select :title, options_for_select(@selections_array), { prompt: "--Selecciona un template--" }, { class: "selection-template" }
+  .small-12.columns
+    .field
+      = f.label :required
+      = f.check_box :required, {}, true, false
+    .field
+      = f.label :items_limit
+      = f.text_field :items_limit, value: 1
+    .field
+      = f.label :aditional_price
+      = f.text_field :aditional_price, value: 0.0
+    .field
+      = f.hidden_field :_destroy
+      = link_to "Remover", "#", class: "remove_selection small button"
+
+    = link_to_add_fields "Agregar item", f, :selection_items

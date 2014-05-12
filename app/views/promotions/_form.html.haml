@@ -1,0 +1,70 @@
+= simple_form_for [@store, @promotion] do |f|
+  = f.error_notification
+
+  .row
+    .small-12.columns
+      .small-12.columns
+        = f.input :name
+  .row
+    .small-12.columns
+      - if @promotion.pack
+        .small-6.columns
+          = f.input :price
+        .small-6.columns
+          = f.input :quantity
+      - else
+        .small-6.columns
+          = f.input :discount
+        .small-6.columns
+          = f.label :fixed
+          = f.radio_button :fixed, true, checked: @promotion.fixed
+          = f.label :fixed, "Fijo", value: true, style: "display:inline"
+          = f.radio_button :fixed, false, checked: !@promotion.fixed
+          = f.label :fixed, "Porcentaje", value: false, style: "display:inline"
+
+  -if @promotion.pack
+    .row
+      .small-12.columns
+        .small-12.columns
+          = f.input :image
+
+  .row
+    .small-12.columns
+      .small-6.columns
+        = f.label :start_at
+        = f.text_field :start_at, class: "datetimepicker"
+      .small-6.columns
+        = f.label :end_at
+        = f.text_field :end_at, class: "datetimepicker"
+
+  .row
+    .small-12.columns
+      .small-6.columns
+        = f.label :active
+        = f.radio_button :active, true, checked: @promotion.active
+        = f.label :active, "Si", value: true, style: "display:inline"
+        = f.radio_button :active, false, checked: !@promotion.active
+        = f.label :active, "No", value: false, style: "display:inline"
+      .small-6.columns
+        = f.label :starred
+        = f.radio_button :starred, true, checked: @promotion.starred
+        = f.label :starred, "Si", value: true, style: "display:inline"
+        = f.radio_button :starred, false, checked: !@promotion.starred
+        = f.label :starred, "No", value: false, style: "display:inline"
+
+  - if @promotion.new_record?
+    .row
+      .small-12.columns
+        %h2 Items
+        .small-10.columns.small-centered
+          %select#items{multiple: "multiple", name: "promotion[pack_items][]"}
+            - @store.items.group_by {|i| i.category}.each do |key, value|
+              %optgroup{label: "#{key}"}
+                - value.each do |item|
+                  %option{value: "#{item._id}", selected: @promotion.items.map(&:id).include?(BSON::ObjectId.from_string(item._id)) }= item.name
+
+  = f.hidden_field :pack, value: @promotion.pack
+  .row.button-div
+    .small-8.small-centered.columns
+      = f.submit "Guardar", class: "button radius"
+      = link_to "Cancelar", [@store, :promotions], class: "button secondary radius"

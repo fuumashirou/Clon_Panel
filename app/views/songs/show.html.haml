@@ -1,0 +1,7 @@
+%h1= @song.title + " - " + @song.artist
+
+%p= @song.category
+
+= link_to 'Editar', [:edit, @store, @song]
+\|
+= link_to 'Volver', [@store, :songs]

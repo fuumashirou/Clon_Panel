@@ -1,0 +1,33 @@
+= link_to "Ver historial", [:history, @store, :orders], class: "button small"
+
+#store-id= @store._id
+
+#order-status
+
+.row.orders
+  .large-6.columns
+    %h2 Ordenes
+    %table
+      %thead
+        %tr
+          %th Mesa
+          %th Fecha
+          %th Pedido
+          %th
+          %th
+          %th
+      %tbody.order
+
+  .large-6.columns
+    %h2 Cuentas
+    %table
+      %thead
+        %tr
+          %th Mesa
+          %th Fecha
+          %th Medio de pago
+          %th Total
+          %th
+          %th
+          %th
+      %tbody.bill

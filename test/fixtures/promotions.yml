@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_time: MyString
+  end_time: MyString
+  active: false
+  starred: false
+
+two:
+  start_time: MyString
+  end_time: MyString
+  active: false
+  starred: false

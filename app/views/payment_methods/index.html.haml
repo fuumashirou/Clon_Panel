@@ -1,0 +1,50 @@
+- if @payment_methods.empty?
+  = simple_form_for @store, html: { class: "custom"} do |f|
+
+    %h3 Modo de pago
+    %p Medios de pago soportados por nuestra plataforma
+    .row
+    - PaymentTypes::Main.list.each do |method|
+      - method = PaymentTypes::Main.find(method)
+      - if method.active
+        .large-3.columns.left
+          %ul.pricing-table
+            %li.title= method.name
+            %li.description
+              .center
+                = link_to new_store_payment_method_path(@store, method: method.name.downcase) do
+                  = image_tag method.button_image, class: "payment-button"
+            %li.bullet-item
+              %b Moneda de preferencia
+              %br
+              = method.currency
+            %li.bullet-item
+              %b Cobro adicional
+              %br
+              = "Fijo: #{method.currency} #{number_to_currency(method.fixed_value)} *" if method.fixed_value
+              %br
+              = "Variable: #{number_to_percentage(method.variable_value, precision: 1)} *" unless method.variable_value
+
+- else
+  - @payment_methods.each do |method|
+    - method = PaymentTypes::Main.find(method.method)
+    .large-3.columns.left
+      %ul.pricing-table
+        %li.title= method.name
+        %li.description
+          .center
+            = image_tag method.button_image, class: "payment-button"
+        %li.bullet-item
+          %b Moneda de preferencia
+          %br
+          = method.currency
+        %li.bullet-item
+          %b Cobro adicional
+          %br
+          = "Fijo: #{method.currency} #{number_to_currency(method.fixed_value)} *" if method.fixed_value
+          %br
+          = "Variable: #{number_to_percentage(method.variable_value, precision: 1)} *" if method.variable_value
+
+.row
+  .small-12.columns
+    * Aplicado al cobro mensual.

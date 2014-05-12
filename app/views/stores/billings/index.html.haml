@@ -1,0 +1,49 @@
+%h1 Cobros
+
+= link_to "Ajustes", [@store, :payment_methods], class: "button"
+
+%p
+  %b Ultimo cobro
+  - if @store.last_billing
+    %table
+      %thead
+        %tr
+          %th Codigo
+          %th Mes
+          %th Ventas
+          %th Cobro
+          %th A Pagar
+          %th Pagado
+      %tbody
+        %tr
+          %td= @store.last_billing._id
+          %td= @store.last_billing.to_date.strftime("%B")
+          %td= number_to_currency   @store.last_billing.gross_value
+          %td= number_to_percentage @store.last_billing.payment, precision: 1
+          %td= number_to_currency   @store.last_billing.net_value
+          %td= @store.last_billing.paid ? l(@store.last_billing.paid_at, format: :short) : link_to("Pagar", @store.last_billing.url, target: "_blank")
+  - else
+    %br No existen cobros
+
+- if @store.billings.length > 1
+  %p
+    %b Cobros anteriores
+
+    %table
+      %thead
+        %tr
+          %th Codigo
+          %th Mes
+          %th Ventas
+          %th Cobro
+          %th A Pagar
+          %th Pagado
+      %tbody
+      - @store.billings.ne(_id: @store.last_billing._id).each do |billing|
+        %tr
+          %td= billing._id
+          %td= billing.to_date.strftime("%B")
+          %td= number_to_currency billing.gross_value
+          %td= number_to_percentage billing.payment, precision: 1
+          %td= number_to_currency billing.net_value
+          %td= billing.paid ? l(billing.paid_at, format: :short) : link_to("Pagar", billing.url, target: "_blank")

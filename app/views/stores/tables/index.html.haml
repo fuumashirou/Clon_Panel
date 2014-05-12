@@ -1,0 +1,28 @@
+%h1 Mesas
+
+- if is_primary?
+  = link_to "Mesero móvil", [@store, :waiters], class: "button alert small"
+  = link_to "Añadir mesa", [@store, :tables], method: :post, class: "button small"
+  / = link_to "Cerrar todos", leave_all_store_checkins_path(@store), method: :delete, class: "button"
+  = link_to "Cambiar QR", [:update_all, @store, :tables], method: :patch, data: { confirm: "Estas seguro?" }, class: "button small"
+  = link_to "Imprimir QR", [:display, @store, :tables], class: "button small"
+%br
+
+- @tables.each do |table|
+  .large-3.columns.left
+    %ul.pricing-table
+      %li.title
+        = link_to "Mesa #{table.number}", [@store, table]
+      %li.description
+        Numero de checkins:
+        = RedisCheckin.find_by({ table_id: table._id }).size
+      %li.description
+        = qr_image table.token, size: "200x200"
+      %li.description
+        = link_to "Ver detalle", [@store, table]
+        - if is_primary?
+          -if table.number == @store.tables.size
+            |
+            = link_to "Eliminar" ,[@store, table], method: :delete, data: { confirm: "Estas seguro?" }
+          |
+          = link_to "Cambiar QR", [:update_token, @store, table], method: :patch, data: { confirm: "Estas seguro?" }

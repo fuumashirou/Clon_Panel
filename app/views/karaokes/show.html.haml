@@ -1,0 +1,20 @@
+%h1 Karaoke
+
+%br= link_to "Canciones", [@store, :songs], class: "button small"
+= link_to "Subir Excel con Canciones", store_menu_song_new_path(@store), class: "button small"
+
+#store-id= @store._id
+
+#karaoke-status
+
+.row
+  .large-6.columns
+    %h2 Pedidos
+    %table
+      %thead
+        %tr
+          %th Mesa
+          %th Fecha
+          %th Cancion
+          %th
+      %tbody.songs

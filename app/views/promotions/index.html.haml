@@ -1,0 +1,32 @@
+%h1 Promociones
+
+- if @store.items.empty?
+  Debes agregar items
+- else
+
+  %p
+    = link_to 'Nuevo pack', new_store_promotion_path(@store, type: "pack"), class: "button small"
+    = link_to 'Nuevo descuento', new_store_promotion_path(@store, type: "discount"), class: "button small"
+
+  %table
+    %tr
+      %th #
+      %th Tipo
+      %th Inicio
+      %th Termino
+      %th Activo
+      - if is_primary?
+        %th
+        %th
+        %th
+    - @promotions.each_with_index do |promotion, index|
+      %tr
+        %td= index +1
+        %td= promotion.pack ? "Pack" : "Descuento"
+        %td=l promotion.start_at, format: :short
+        %td=l promotion.end_at, format: :short
+        %td= promotion.active.humanize
+        - if is_primary?
+          %td= link_for 'view', @store, promotion
+          %td= link_for 'edit', @store, promotion
+          %td= link_for 'delete', @store, promotion

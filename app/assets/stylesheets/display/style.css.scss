@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#sheet {
+  padding: 0;
+  float: left;
+  width: 408px;
+  height: 939px;
+  background-image: image-url("display/fondo.jpg");
+  background-size: 408px 939px;
+  margin-bottom: 51px;
+}
+
+.qr {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin-top: 450px;
+  margin-left: 100px;
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,9 @@
+%h1 Selecciones
+
+- if is_primary?
+  = link_to 'Nueva seleccion', [:new, @store, :selection], class: "button small"
+- unless @selections.empty?
+  = link_to 'Cambiar stock', multi_stock_store_selections_path(@store), data: { confirm: "Cambiaras el stock de todos los items" }, class: "button small"
+
+#selections-list
+  = render "selections", selections: @selections

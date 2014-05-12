@@ -1,0 +1,10 @@
+%h1= "Descuento mesa ##{@bill['table_number']}"
+= form_tag apply_discount_store_checkin_billing_path(@store, @bill['id']) do
+  %h2= "Total: #{number_to_currency @bill['total']}"
+  = label_tag :discount, "Descuento"
+  = number_field_tag :discount, @bill["discount"]
+
+  .row.button-div
+    .small-8.small-centered.columns
+      = submit_tag "Guardar", class: "button radius"
+      = link_to "Cancelar", [@store, :orders], class: "button secondary radius"

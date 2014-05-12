@@ -1,0 +1,4 @@
+- @store.tables.each do |table|
+  - url = qr_image table.token, size: "200x200", image: false
+  #sheet
+    .qr{style: "background-image: url(#{image_path url})"}

@@ -1,0 +1,55 @@
+- if admin_signed_in? || account_signed_in?
+  .user-bar
+    .inner
+      .left
+        - if admin_signed_in?
+          %ul.admin
+            %li= link_to "Locales", stores_path
+            %li= link_to "Usuarios", users_path
+            %li= link_to "Admin", admins_path
+            %li= link_to "Monedas", currencies_path
+            %li= link_to "Sidekiq", sidekiq_admins_path
+            %li= link_to "Logs", admins_logs_application_path
+        - elsif manager_signed_in?
+          %ul.admin
+            %li= link_to "Locales", stores_path
+      .right.current-user
+        = "Bienvenido #{current_user}"
+        = link_to "salir", destroy_account_session_path, method: :delete
+  %nav.top-bar
+    %section.top-bar-inner
+      %ul.title-area{style: "margin-left: 10%;"}
+        = link_to @store do
+          %li.name
+        %li.toggle-topbar.menu-icon
+          = link_to "#" do
+            %span Menu
+      %section.top-bar-section{style: "margin-right: 10%;"}
+        %ul.right
+          - if @store && !@store.new_record?
+            %li= link_to "Local", @store
+            %li
+              = link_to [@store, :orders] do
+                Pedidos
+                %span.pink= "(#{$redis.zcount('Store:' + @store._id + ':OrderMessage', "-inf", "+inf")})"
+            %li
+              = link_to [@store, :items] do
+                Carta
+                %span.pink= "(#{@store.items.size})"
+            %li
+              = link_to [@store, :happy_hour] do
+                Happy Hour
+            %li
+              = link_to [@store, :karaoke] do
+                Karaoke
+                %span.pink= "(#{@store.songs.size})"
+            %li
+              = link_to [@store, :tables] do
+                Mesas
+                %span.pink= "(#{@store.tables.size})"
+            %li= link_to "Horarios", [@store, :schedule]
+            - if admin_signed_in? #if is_primary? && @store.payment > 0
+              %li
+                = link_to [@store, :billings] do
+                  Cobros
+                  %span.pink= "(#{@store.billings.size})"

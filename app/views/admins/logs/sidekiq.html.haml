@@ -1,0 +1,13 @@
+%ul
+  %li= link_to "Aplicacion", admins_logs_application_path
+  %li= link_to "Produccion", admins_logs_production_path
+  %li= link_to "Sidekiq", admins_logs_sidekiq_path
+
+%p.light Solo las ultimas 2000 lineas
+.tab-pane#sidekiq
+  .file-holder#README
+    .file-content.logs
+      %ol
+        - Twable::Logger.read_latest_for('sidekiq.log').each do |line|
+          %li
+            %p= line

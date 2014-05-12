@@ -1,0 +1,2 @@
+module MenuSongHelper
+end

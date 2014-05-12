@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Type:
+  = @category.type
+%p
+  %b Name:
+  = @category.name
+%p
+  %b Items:
+  = @category.items
+
+= link_to 'Edit', [:edit, @store, @category]
+\|
+= link_to 'Back', [@store, :categories]
